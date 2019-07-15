@@ -48,7 +48,7 @@ class ACRefreshControlTests: XCTestCase {
 	func testTextAttributes() {
 		XCTAssertEqual(
 			ACRefreshControlTests.refresh.attributedTitle?.string,
-			"title"
+			Localized.refreshControl
 		)
 		XCTAssertEqual(
 			ACRefreshControlTests.attributes[.font] as! UIFont,

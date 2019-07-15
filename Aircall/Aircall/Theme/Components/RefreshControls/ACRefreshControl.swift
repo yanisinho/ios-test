@@ -15,7 +15,7 @@ final class ACRefreshControl: YSRefreshControl {
 	/// Configure attributedTitle.
 	private func setupTitle() {
 		attributedTitle = NSAttributedString(
-			string: "title",
+			string: Localized.refreshControl,
 			attributes: [
 				.foregroundColor: Color.secondary as Any,
 				.font: UIFont.preferredFont(forTextStyle: .headline)
