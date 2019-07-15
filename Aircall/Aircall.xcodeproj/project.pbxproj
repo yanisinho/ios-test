@@ -32,6 +32,7 @@
 		84EF1D8C22DD2EB300389815 /* ACRefreshControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D8B22DD2EB300389815 /* ACRefreshControlTests.swift */; };
 		84EF1D8F22DD2F6400389815 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D8E22DD2F6400389815 /* Theme.swift */; };
 		84EF1D9122DD300300389815 /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D9022DD300300389815 /* ThemeTests.swift */; };
+		84EF1D9D22DD317200389815 /* Aircall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D9C22DD317200389815 /* Aircall.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +93,7 @@
 		84EF1D8B22DD2EB300389815 /* ACRefreshControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACRefreshControlTests.swift; sourceTree = "<group>"; };
 		84EF1D8E22DD2F6400389815 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		84EF1D9022DD300300389815 /* ThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
+		84EF1D9C22DD317200389815 /* Aircall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircall.swift; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 			children = (
 				84EF1D4A22DD213800389815 /* Info.plist */,
 				84EF1D3B22DD213700389815 /* AppDelegate.swift */,
+				84EF1D9C22DD317200389815 /* Aircall.swift */,
 				84EF1D6F22DD271700389815 /* Theme */,
 				84EF1D6E22DD270900389815 /* Scenes */,
 				84EF1D6D22DD26FC00389815 /* Data */,
@@ -597,6 +600,7 @@
 				84EF1D8422DD2D5000389815 /* ACRefreshControl.swift in Sources */,
 				84EF1D7622DD29F000389815 /* Color.swift in Sources */,
 				84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */,
+				84EF1D9D22DD317200389815 /* Aircall.swift in Sources */,
 				84EF1D8F22DD2F6400389815 /* Theme.swift in Sources */,
 				84EF1D8022DD2C7F00389815 /* ACSubtitleLabel.swift in Sources */,
 				84EF1D7C22DD2C1200389815 /* YSRefreshControl.swift in Sources */,
