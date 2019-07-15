@@ -16,6 +16,7 @@ import Foundation
 	This describes what is a ViewModel in MVVM design pattern.
 
 */
+//swiftlint:disable type_name
 protocol ViewModel {
 
 	/// `ViewModel`'s input.
@@ -37,3 +38,4 @@ protocol ViewModel {
   func setup(from input: In) -> Out
 
 }
+//swiftlint:enable type_name

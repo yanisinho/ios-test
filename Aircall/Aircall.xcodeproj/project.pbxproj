@@ -74,6 +74,13 @@
 		84EF1E0122DD44EA00389815 /* ConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0022DD44EA00389815 /* ConfiguratorTests.swift */; };
 		84EF1E0322DD453700389815 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0222DD453700389815 /* ViewModel.swift */; };
 		84EF1E0522DD456900389815 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0422DD456900389815 /* Coordinator.swift */; };
+		84EF1E0722DD461900389815 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0622DD461900389815 /* AppCoordinator.swift */; };
+		84EF1E0922DD464100389815 /* CallListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0822DD464100389815 /* CallListModel.swift */; };
+		84EF1E0D22DD465400389815 /* CallListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0C22DD465400389815 /* CallListViewModel.swift */; };
+		84EF1E0F22DD465E00389815 /* CallListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0E22DD465E00389815 /* CallListCoordinator.swift */; };
+		84EF1E1122DD466E00389815 /* CallDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E1022DD466E00389815 /* CallDetailsModel.swift */; };
+		84EF1E1322DD467600389815 /* CallDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E1222DD467600389815 /* CallDetailsViewModel.swift */; };
+		84EF1E1522DD468300389815 /* CallDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E1422DD468300389815 /* CallDetailsCoordinator.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -176,6 +183,13 @@
 		84EF1E0022DD44EA00389815 /* ConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorTests.swift; sourceTree = "<group>"; };
 		84EF1E0222DD453700389815 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		84EF1E0422DD456900389815 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		84EF1E0622DD461900389815 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		84EF1E0822DD464100389815 /* CallListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListModel.swift; sourceTree = "<group>"; };
+		84EF1E0C22DD465400389815 /* CallListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListViewModel.swift; sourceTree = "<group>"; };
+		84EF1E0E22DD465E00389815 /* CallListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListCoordinator.swift; sourceTree = "<group>"; };
+		84EF1E1022DD466E00389815 /* CallDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDetailsModel.swift; sourceTree = "<group>"; };
+		84EF1E1222DD467600389815 /* CallDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDetailsViewModel.swift; sourceTree = "<group>"; };
+		84EF1E1422DD468300389815 /* CallDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDetailsCoordinator.swift; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,6 +271,7 @@
 			children = (
 				84EF1D4A22DD213800389815 /* Info.plist */,
 				84EF1D3B22DD213700389815 /* AppDelegate.swift */,
+				84EF1E0622DD461900389815 /* AppCoordinator.swift */,
 				84EF1D6E22DD270900389815 /* Scenes */,
 				84EF1DC822DD388900389815 /* Network */,
 				84EF1D6D22DD26FC00389815 /* Data */,
@@ -307,6 +322,8 @@
 				84EF1D3F22DD213700389815 /* Main.storyboard */,
 				84EF1D4722DD213800389815 /* LaunchScreen.storyboard */,
 				84EF1D3D22DD213700389815 /* ViewController.swift */,
+				84EF1E1622DD468D00389815 /* CallList */,
+				84EF1E1722DD469100389815 /* CallDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -572,6 +589,90 @@
 				84EF1E0022DD44EA00389815 /* ConfiguratorTests.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		84EF1E1622DD468D00389815 /* CallList */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1E1822DD469D00389815 /* Model */,
+				84EF1E1F22DD46DF00389815 /* View */,
+				84EF1E1922DD46A300389815 /* ViewModel */,
+				84EF1E1A22DD46A800389815 /* Coordinator */,
+			);
+			path = CallList;
+			sourceTree = "<group>";
+		};
+		84EF1E1722DD469100389815 /* CallDetails */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1E1C22DD46BA00389815 /* Model */,
+				84EF1E1D22DD46BF00389815 /* View */,
+				84EF1E1E22DD46CA00389815 /* ViewModel */,
+				84EF1E1B22DD46B000389815 /* Coordinator */,
+			);
+			path = CallDetails;
+			sourceTree = "<group>";
+		};
+		84EF1E1822DD469D00389815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1E0822DD464100389815 /* CallListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84EF1E1922DD46A300389815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1E0C22DD465400389815 /* CallListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84EF1E1A22DD46A800389815 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1E0E22DD465E00389815 /* CallListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		84EF1E1B22DD46B000389815 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1E1422DD468300389815 /* CallDetailsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		84EF1E1C22DD46BA00389815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1E1022DD466E00389815 /* CallDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84EF1E1D22DD46BF00389815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84EF1E1E22DD46CA00389815 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1E1222DD467600389815 /* CallDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84EF1E1F22DD46DF00389815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -861,6 +962,8 @@
 				84EF1DB122DD33C000389815 /* WSError.swift in Sources */,
 				84EF1D3E22DD213700389815 /* ViewController.swift in Sources */,
 				84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */,
+				84EF1E0722DD461900389815 /* AppCoordinator.swift in Sources */,
+				84EF1E0F22DD465E00389815 /* CallListCoordinator.swift in Sources */,
 				84EF1DD922DD3CAC00389815 /* UIRefreshControl+Refreshing.swift in Sources */,
 				84EF1D8222DD2C8A00389815 /* ACHeaderLabel.swift in Sources */,
 				84EF1DEF22DD3FD400389815 /* CDCall+CoreDataProperties.swift in Sources */,
@@ -869,16 +972,19 @@
 				84EF1DFD22DD442500389815 /* CallDisplayable.swift in Sources */,
 				84EF1D7122DD288500389815 /* ColorName.swift in Sources */,
 				84EF1DAF22DD33B900389815 /* WSReset.swift in Sources */,
+				84EF1E1522DD468300389815 /* CallDetailsCoordinator.swift in Sources */,
 				84EF1DEB22DD3EF500389815 /* Observable+MapBusiness.swift in Sources */,
 				84EF1DAD22DD33B000389815 /* WSCall.swift in Sources */,
 				84EF1D8422DD2D5000389815 /* ACRefreshControl.swift in Sources */,
 				84EF1D9F22DD32B500389815 /* AircallError.swift in Sources */,
+				84EF1E1322DD467600389815 /* CallDetailsViewModel.swift in Sources */,
 				84EF1D7622DD29F000389815 /* Color.swift in Sources */,
 				84EF1DF322DD41DA00389815 /* CDCall+Scope.swift in Sources */,
 				84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */,
 				84EF1DA122DD32C000389815 /* AircallError+LocalizedError.swift in Sources */,
 				84EF1DED22DD3FCA00389815 /* CDCall+CoreDataClass.swift in Sources */,
 				84EF1E0522DD456900389815 /* Coordinator.swift in Sources */,
+				84EF1E1122DD466E00389815 /* CallDetailsModel.swift in Sources */,
 				84EF1DBB22DD347900389815 /* ACDate.swift in Sources */,
 				84EF1DBD22DD34AF00389815 /* CallRepresentable.swift in Sources */,
 				84EF1D9D22DD317200389815 /* Aircall.swift in Sources */,
@@ -886,6 +992,8 @@
 				84EF1DB722DD342B00389815 /* CallType.swift in Sources */,
 				84EF1D8022DD2C7F00389815 /* ACSubtitleLabel.swift in Sources */,
 				84EF1D7C22DD2C1200389815 /* YSRefreshControl.swift in Sources */,
+				84EF1E0D22DD465400389815 /* CallListViewModel.swift in Sources */,
+				84EF1E0922DD464100389815 /* CallListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 import XCTest
 @testable import Aircall
 
+//swiftlint:disable identifier_name
 class ConfiguratorTests: XCTestCase {
 
 	/// Sample displayable
@@ -76,3 +77,4 @@ class ConfiguratorTests: XCTestCase {
 	}
 
 }
+//swiftlint:enable identifier_name

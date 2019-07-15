@@ -12,6 +12,7 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+	/// Main window.
 	var window: UIWindow?
 
 	func application(
