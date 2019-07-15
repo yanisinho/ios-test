@@ -71,6 +71,7 @@
 		84EF1DFB22DD42D700389815 /* RxDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DFA22DD42D700389815 /* RxDataSources.swift */; };
 		84EF1DFD22DD442500389815 /* CallDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DFC22DD442500389815 /* CallDisplayable.swift */; };
 		84EF1DFF22DD443800389815 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DFE22DD443800389815 /* Configurator.swift */; };
+		84EF1E0122DD44EA00389815 /* ConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0022DD44EA00389815 /* ConfiguratorTests.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -170,6 +171,7 @@
 		84EF1DFA22DD42D700389815 /* RxDataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxDataSources.swift; sourceTree = "<group>"; };
 		84EF1DFC22DD442500389815 /* CallDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDisplayable.swift; sourceTree = "<group>"; };
 		84EF1DFE22DD443800389815 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		84EF1E0022DD44EA00389815 /* ConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorTests.swift; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -550,8 +552,8 @@
 			isa = PBXGroup;
 			children = (
 				84EF1DFA22DD42D700389815 /* RxDataSources.swift */,
-				84EF1DBA22DD347800389815 /* ACDate.swift */,
 				84EF1DEA22DD3EF500389815 /* Observable+MapBusiness.swift */,
+				84EF1DBA22DD347800389815 /* ACDate.swift */,
 				84EF1DFE22DD443800389815 /* Configurator.swift */,
 			);
 			path = Utils;
@@ -561,6 +563,7 @@
 			isa = PBXGroup;
 			children = (
 				84EF1DE722DD3E0D00389815 /* ACDateTests.swift */,
+				84EF1E0022DD44EA00389815 /* ConfiguratorTests.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -892,6 +895,7 @@
 				84EF1DD722DD3A3100389815 /* LocalizedKeyTests.swift in Sources */,
 				84EF1DC122DD35CE00389815 /* WSCallTests.swift in Sources */,
 				84EF1D7822DD2A7000389815 /* ColorTests.swift in Sources */,
+				84EF1E0122DD44EA00389815 /* ConfiguratorTests.swift in Sources */,
 				84EF1DDD22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift in Sources */,
 				84EF1DC322DD35D900389815 /* WSResetTests.swift in Sources */,
 				84EF1D8A22DD2E1600389815 /* ACHeaderLabelTests.swift in Sources */,
