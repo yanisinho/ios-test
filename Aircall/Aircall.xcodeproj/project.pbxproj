@@ -17,6 +17,7 @@
 		84EF1D5422DD213800389815 /* AircallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D5322DD213800389815 /* AircallTests.swift */; };
 		84EF1D5F22DD213800389815 /* AircallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D5E22DD213800389815 /* AircallUITests.swift */; };
 		84EF1D7122DD288500389815 /* ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7022DD288500389815 /* ColorName.swift */; };
+		84EF1D7422DD28E800389815 /* ColorNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7322DD28E800389815 /* ColorNameTests.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		84EF1D5E22DD213800389815 /* AircallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircallUITests.swift; sourceTree = "<group>"; };
 		84EF1D6022DD213800389815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EF1D7022DD288500389815 /* ColorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorName.swift; sourceTree = "<group>"; };
+		84EF1D7322DD28E800389815 /* ColorNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNameTests.swift; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 			children = (
 				84EF1D5322DD213800389815 /* AircallTests.swift */,
 				84EF1D5522DD213800389815 /* Info.plist */,
+				84EF1D7322DD28E800389815 /* ColorNameTests.swift */,
 			);
 			path = AircallTests;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EF1D7422DD28E800389815 /* ColorNameTests.swift in Sources */,
 				84EF1D5422DD213800389815 /* AircallTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
