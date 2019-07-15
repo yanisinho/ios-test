@@ -39,6 +39,15 @@
 		84EF1DA722DD332F00389815 /* getCall.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1DA322DD332E00389815 /* getCall.json */; };
 		84EF1DA822DD332F00389815 /* getCalls.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1DA422DD332E00389815 /* getCalls.json */; };
 		84EF1DA922DD332F00389815 /* archiveCall.json in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1DA522DD332F00389815 /* archiveCall.json */; };
+		84EF1DAB22DD33A900389815 /* WSCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DAA22DD33A900389815 /* WSCalls.swift */; };
+		84EF1DAD22DD33B000389815 /* WSCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DAC22DD33B000389815 /* WSCall.swift */; };
+		84EF1DAF22DD33B900389815 /* WSReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DAE22DD33B900389815 /* WSReset.swift */; };
+		84EF1DB122DD33C000389815 /* WSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DB022DD33C000389815 /* WSError.swift */; };
+		84EF1DB322DD33C800389815 /* WSResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DB222DD33C800389815 /* WSResponse.swift */; };
+		84EF1DB522DD342300389815 /* CallDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DB422DD342300389815 /* CallDirection.swift */; };
+		84EF1DB722DD342B00389815 /* CallType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DB622DD342B00389815 /* CallType.swift */; };
+		84EF1DBB22DD347900389815 /* ACDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DBA22DD347800389815 /* ACDate.swift */; };
+		84EF1DBD22DD34AF00389815 /* CallRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DBC22DD34AF00389815 /* CallRepresentable.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +115,15 @@
 		84EF1DA322DD332E00389815 /* getCall.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getCall.json; sourceTree = "<group>"; };
 		84EF1DA422DD332E00389815 /* getCalls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getCalls.json; sourceTree = "<group>"; };
 		84EF1DA522DD332F00389815 /* archiveCall.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = archiveCall.json; sourceTree = "<group>"; };
+		84EF1DAA22DD33A900389815 /* WSCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCalls.swift; sourceTree = "<group>"; };
+		84EF1DAC22DD33B000389815 /* WSCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCall.swift; sourceTree = "<group>"; };
+		84EF1DAE22DD33B900389815 /* WSReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSReset.swift; sourceTree = "<group>"; };
+		84EF1DB022DD33C000389815 /* WSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSError.swift; sourceTree = "<group>"; };
+		84EF1DB222DD33C800389815 /* WSResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSResponse.swift; sourceTree = "<group>"; };
+		84EF1DB422DD342300389815 /* CallDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirection.swift; sourceTree = "<group>"; };
+		84EF1DB622DD342B00389815 /* CallType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallType.swift; sourceTree = "<group>"; };
+		84EF1DBA22DD347800389815 /* ACDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACDate.swift; sourceTree = "<group>"; };
+		84EF1DBC22DD34AF00389815 /* CallRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRepresentable.swift; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +215,15 @@
 				84EF1D6D22DD26FC00389815 /* Data */,
 				84EF1D9E22DD32B500389815 /* AircallError.swift */,
 				84EF1DA022DD32C000389815 /* AircallError+LocalizedError.swift */,
+				84EF1DAA22DD33A900389815 /* WSCalls.swift */,
+				84EF1DAC22DD33B000389815 /* WSCall.swift */,
+				84EF1DAE22DD33B900389815 /* WSReset.swift */,
+				84EF1DB022DD33C000389815 /* WSError.swift */,
+				84EF1DB222DD33C800389815 /* WSResponse.swift */,
+				84EF1DB422DD342300389815 /* CallDirection.swift */,
+				84EF1DB622DD342B00389815 /* CallType.swift */,
+				84EF1DBA22DD347800389815 /* ACDate.swift */,
+				84EF1DBC22DD34AF00389815 /* CallRepresentable.swift */,
 			);
 			path = Aircall;
 			sourceTree = "<group>";
@@ -613,19 +640,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EF1DB322DD33C800389815 /* WSResponse.swift in Sources */,
+				84EF1DB522DD342300389815 /* CallDirection.swift in Sources */,
 				84EF1D7A22DD2BFE00389815 /* YSLabel.swift in Sources */,
+				84EF1DAB22DD33A900389815 /* WSCalls.swift in Sources */,
+				84EF1DB122DD33C000389815 /* WSError.swift in Sources */,
 				84EF1D3E22DD213700389815 /* ViewController.swift in Sources */,
 				84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */,
 				84EF1D8222DD2C8A00389815 /* ACHeaderLabel.swift in Sources */,
 				84EF1D7E22DD2C7300389815 /* ACTitleLabel.swift in Sources */,
 				84EF1D7122DD288500389815 /* ColorName.swift in Sources */,
+				84EF1DAF22DD33B900389815 /* WSReset.swift in Sources */,
+				84EF1DAD22DD33B000389815 /* WSCall.swift in Sources */,
 				84EF1D8422DD2D5000389815 /* ACRefreshControl.swift in Sources */,
 				84EF1D9F22DD32B500389815 /* AircallError.swift in Sources */,
 				84EF1D7622DD29F000389815 /* Color.swift in Sources */,
 				84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */,
 				84EF1DA122DD32C000389815 /* AircallError+LocalizedError.swift in Sources */,
+				84EF1DBB22DD347900389815 /* ACDate.swift in Sources */,
+				84EF1DBD22DD34AF00389815 /* CallRepresentable.swift in Sources */,
 				84EF1D9D22DD317200389815 /* Aircall.swift in Sources */,
 				84EF1D8F22DD2F6400389815 /* Theme.swift in Sources */,
+				84EF1DB722DD342B00389815 /* CallType.swift in Sources */,
 				84EF1D8022DD2C7F00389815 /* ACSubtitleLabel.swift in Sources */,
 				84EF1D7C22DD2C1200389815 /* YSRefreshControl.swift in Sources */,
 			);
