@@ -1,16 +1,85 @@
 PODS:
+  - Alamofire (4.8.2)
+  - Differentiator (3.1.0)
+  - MarqueeLabel (4.0.0)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Moya/RxSwift (13.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - NotificationBannerSwift (2.2.0):
+    - MarqueeLabel (~> 4.0.0)
+    - SnapKit (~> 5.0.0)
+  - Result (4.1.0)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxCoreData (0.5.1):
+    - RxSwift (~> 4.3.1)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
+  - RxSwiftExt (3.4.0):
+    - RxSwiftExt/Core (= 3.4.0)
+    - RxSwiftExt/RxCocoa (= 3.4.0)
+  - RxSwiftExt/Core (3.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwiftExt/RxCocoa (3.4.0):
+    - RxCocoa (~> 4.0)
+    - RxSwiftExt/Core
+  - SnapKit (5.0.0)
   - SwiftLint (0.32.0)
 
 DEPENDENCIES:
+  - Moya/RxSwift
+  - NotificationBannerSwift
+  - Reusable
+  - RxCocoa
+  - RxCoreData
+  - RxDataSources
+  - RxSwiftExt
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Differentiator
+    - MarqueeLabel
+    - Moya
+    - NotificationBannerSwift
+    - Result
+    - Reusable
+    - RxCocoa
+    - RxCoreData
+    - RxDataSources
+    - RxSwift
+    - RxSwiftExt
+    - SnapKit
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  MarqueeLabel: b55b26e690b6ad41faedd95cbf5eae6f1d1735b4
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  NotificationBannerSwift: 0ebb4b35e18c0515fdfe01b5ebd90c3eb1255e3d
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxCoreData: fb535b9a617e9d84305b0e626fdac8162cd4b4bb
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
 
-PODFILE CHECKSUM: 33ec9a6a5d9a93c3b374c8e127c58d7d27c77fb7
+PODFILE CHECKSUM: 9b6bea8813b9e97f6a6a5fc71593b131e1c94d84
 
 COCOAPODS: 1.5.3
