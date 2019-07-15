@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+//swiftlint:disable identifier_name
 extension CDCall: CallRepresentable {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<CDCall> {
@@ -46,3 +47,4 @@ extension CDCall: Comparable {
 		return lhs.dateShort < rhs.dateShort
 	}
 }
+//swiftlint:enable identifier_name
