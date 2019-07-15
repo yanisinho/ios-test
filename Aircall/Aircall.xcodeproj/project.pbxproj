@@ -183,15 +183,9 @@
 		84EF1D5222DD213800389815 /* AircallTests */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1D5322DD213800389815 /* AircallTests.swift */,
 				84EF1D5522DD213800389815 /* Info.plist */,
-				84EF1D7322DD28E800389815 /* ColorNameTests.swift */,
-				84EF1D7722DD2A7000389815 /* ColorTests.swift */,
-				84EF1D8522DD2DFF00389815 /* ACTitleLabelTests.swift */,
-				84EF1D8722DD2E0A00389815 /* ACSubtitleLabelTests.swift */,
-				84EF1D8922DD2E1600389815 /* ACHeaderLabelTests.swift */,
-				84EF1D8B22DD2EB300389815 /* ACRefreshControlTests.swift */,
-				84EF1D9022DD300300389815 /* ThemeTests.swift */,
+				84EF1D5322DD213800389815 /* AircallTests.swift */,
+				84EF1D9722DD30D900389815 /* Theme */,
 			);
 			path = AircallTests;
 			sourceTree = "<group>";
@@ -227,17 +221,103 @@
 			isa = PBXGroup;
 			children = (
 				84EF1D4522DD213800389815 /* Assets.xcassets */,
-				84EF1D7022DD288500389815 /* ColorName.swift */,
+				84EF1D8E22DD2F6400389815 /* Theme.swift */,
+				84EF1D9222DD307D00389815 /* Colors */,
+				84EF1D9322DD308E00389815 /* Components */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		84EF1D9222DD307D00389815 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
 				84EF1D7522DD29F000389815 /* Color.swift */,
+				84EF1D7022DD288500389815 /* ColorName.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		84EF1D9322DD308E00389815 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D9422DD309500389815 /* YSKit */,
+				84EF1D9522DD309D00389815 /* Labels */,
+				84EF1D9622DD30A400389815 /* RefreshControls */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		84EF1D9422DD309500389815 /* YSKit */ = {
+			isa = PBXGroup;
+			children = (
 				84EF1D7922DD2BFE00389815 /* YSLabel.swift */,
 				84EF1D7B22DD2C1200389815 /* YSRefreshControl.swift */,
+			);
+			path = YSKit;
+			sourceTree = "<group>";
+		};
+		84EF1D9522DD309D00389815 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
 				84EF1D7D22DD2C7300389815 /* ACTitleLabel.swift */,
 				84EF1D7F22DD2C7F00389815 /* ACSubtitleLabel.swift */,
 				84EF1D8122DD2C8A00389815 /* ACHeaderLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		84EF1D9622DD30A400389815 /* RefreshControls */ = {
+			isa = PBXGroup;
+			children = (
 				84EF1D8322DD2D5000389815 /* ACRefreshControl.swift */,
-				84EF1D8E22DD2F6400389815 /* Theme.swift */,
+			);
+			path = RefreshControls;
+			sourceTree = "<group>";
+		};
+		84EF1D9722DD30D900389815 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D9022DD300300389815 /* ThemeTests.swift */,
+				84EF1D9822DD30E500389815 /* Colors */,
+				84EF1D9922DD30F300389815 /* Components */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		84EF1D9822DD30E500389815 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D7722DD2A7000389815 /* ColorTests.swift */,
+				84EF1D7322DD28E800389815 /* ColorNameTests.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		84EF1D9922DD30F300389815 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D9A22DD30FB00389815 /* Labels */,
+				84EF1D9B22DD310100389815 /* RefreshControls */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		84EF1D9A22DD30FB00389815 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D8522DD2DFF00389815 /* ACTitleLabelTests.swift */,
+				84EF1D8722DD2E0A00389815 /* ACSubtitleLabelTests.swift */,
+				84EF1D8922DD2E1600389815 /* ACHeaderLabelTests.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		84EF1D9B22DD310100389815 /* RefreshControls */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D8B22DD2EB300389815 /* ACRefreshControlTests.swift */,
+			);
+			path = RefreshControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
