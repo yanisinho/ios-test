@@ -139,13 +139,11 @@
 		84EF1D3A22DD213700389815 /* Aircall */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1D3B22DD213700389815 /* AppDelegate.swift */,
-				84EF1D3D22DD213700389815 /* ViewController.swift */,
-				84EF1D3F22DD213700389815 /* Main.storyboard */,
-				84EF1D4522DD213800389815 /* Assets.xcassets */,
-				84EF1D4722DD213800389815 /* LaunchScreen.storyboard */,
 				84EF1D4A22DD213800389815 /* Info.plist */,
-				84EF1D4222DD213700389815 /* Aircall.xcdatamodeld */,
+				84EF1D3B22DD213700389815 /* AppDelegate.swift */,
+				84EF1D6F22DD271700389815 /* Theme */,
+				84EF1D6E22DD270900389815 /* Scenes */,
+				84EF1D6D22DD26FC00389815 /* Data */,
 			);
 			path = Aircall;
 			sourceTree = "<group>";
@@ -166,6 +164,32 @@
 				84EF1D6022DD213800389815 /* Info.plist */,
 			);
 			path = AircallUITests;
+			sourceTree = "<group>";
+		};
+		84EF1D6D22DD26FC00389815 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D4222DD213700389815 /* Aircall.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		84EF1D6E22DD270900389815 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D3F22DD213700389815 /* Main.storyboard */,
+				84EF1D4722DD213800389815 /* LaunchScreen.storyboard */,
+				84EF1D3D22DD213700389815 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		84EF1D6F22DD271700389815 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D4522DD213800389815 /* Assets.xcassets */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
