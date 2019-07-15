@@ -1,5 +1,5 @@
 //
-//  WSCallsTests.swift
+//  ACDateTests.swift
 //  AircallTests
 //
 //  Created by Yanis SIDAHMED on 16/07/2019.
@@ -9,10 +9,13 @@
 import XCTest
 @testable import Aircall
 
-class WSCallsTests: XCTestCase {
+class ACDateTests: XCTestCase {
 
-	/// Test `WSCalls` initializer.
-	func testInit() {
+	func testDateFromString() {
+
+	}
+
+	func testStringFromDate() {
 
 	}
 
