@@ -61,6 +61,7 @@
 		84EF1DDD22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DDC22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift */; };
 		84EF1DDF22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DDE22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift */; };
 		84EF1DE822DD3E0D00389815 /* ACDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DE722DD3E0D00389815 /* ACDateTests.swift */; };
+		84EF1DEB22DD3EF500389815 /* Observable+MapBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DEA22DD3EF500389815 /* Observable+MapBusiness.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -150,6 +151,7 @@
 		84EF1DDC22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRefreshControlRefreshingTests.swift; sourceTree = "<group>"; };
 		84EF1DDE22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewAnimatingTests.swift; sourceTree = "<group>"; };
 		84EF1DE722DD3E0D00389815 /* ACDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACDateTests.swift; sourceTree = "<group>"; };
+		84EF1DEA22DD3EF500389815 /* Observable+MapBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+MapBusiness.swift"; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -523,6 +525,7 @@
 			isa = PBXGroup;
 			children = (
 				84EF1DBA22DD347800389815 /* ACDate.swift */,
+				84EF1DEA22DD3EF500389815 /* Observable+MapBusiness.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -822,6 +825,7 @@
 				84EF1D7E22DD2C7300389815 /* ACTitleLabel.swift in Sources */,
 				84EF1D7122DD288500389815 /* ColorName.swift in Sources */,
 				84EF1DAF22DD33B900389815 /* WSReset.swift in Sources */,
+				84EF1DEB22DD3EF500389815 /* Observable+MapBusiness.swift in Sources */,
 				84EF1DAD22DD33B000389815 /* WSCall.swift in Sources */,
 				84EF1D8422DD2D5000389815 /* ACRefreshControl.swift in Sources */,
 				84EF1D9F22DD32B500389815 /* AircallError.swift in Sources */,
