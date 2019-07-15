@@ -213,25 +213,12 @@
 			children = (
 				84EF1D4A22DD213800389815 /* Info.plist */,
 				84EF1D3B22DD213700389815 /* AppDelegate.swift */,
-				84EF1D9C22DD317200389815 /* Aircall.swift */,
-				84EF1DA422DD332E00389815 /* getCalls.json */,
-				84EF1DA222DD332E00389815 /* resetCalls.json */,
-				84EF1DA322DD332E00389815 /* getCall.json */,
-				84EF1DA522DD332F00389815 /* archiveCall.json */,
-				84EF1D6F22DD271700389815 /* Theme */,
-				84EF1D6E22DD270900389815 /* Scenes */,
-				84EF1D6D22DD26FC00389815 /* Data */,
-				84EF1D9E22DD32B500389815 /* AircallError.swift */,
-				84EF1DA022DD32C000389815 /* AircallError+LocalizedError.swift */,
-				84EF1DAA22DD33A900389815 /* WSCalls.swift */,
-				84EF1DAC22DD33B000389815 /* WSCall.swift */,
-				84EF1DAE22DD33B900389815 /* WSReset.swift */,
-				84EF1DB022DD33C000389815 /* WSError.swift */,
-				84EF1DB222DD33C800389815 /* WSResponse.swift */,
-				84EF1DB422DD342300389815 /* CallDirection.swift */,
-				84EF1DB622DD342B00389815 /* CallType.swift */,
 				84EF1DBA22DD347800389815 /* ACDate.swift */,
 				84EF1DBC22DD34AF00389815 /* CallRepresentable.swift */,
+				84EF1D6E22DD270900389815 /* Scenes */,
+				84EF1D6D22DD26FC00389815 /* Data */,
+				84EF1DC822DD388900389815 /* Network */,
+				84EF1D6F22DD271700389815 /* Theme */,
 			);
 			path = Aircall;
 			sourceTree = "<group>";
@@ -240,12 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				84EF1D5522DD213800389815 /* Info.plist */,
-				84EF1D5322DD213800389815 /* AircallTests.swift */,
+				84EF1DCC22DD38C200389815 /* Network */,
 				84EF1D9722DD30D900389815 /* Theme */,
-				84EF1DBE22DD35C200389815 /* WSCallsTests.swift */,
-				84EF1DC022DD35CE00389815 /* WSCallTests.swift */,
-				84EF1DC222DD35D900389815 /* WSResetTests.swift */,
-				84EF1DC622DD379000389815 /* AircallErrorTests.swift */,
 			);
 			path = AircallTests;
 			sourceTree = "<group>";
@@ -263,6 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				84EF1D4222DD213700389815 /* Aircall.xcdatamodeld */,
+				84EF1DB422DD342300389815 /* CallDirection.swift */,
+				84EF1DB622DD342B00389815 /* CallType.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -378,6 +363,77 @@
 				84EF1D8B22DD2EB300389815 /* ACRefreshControlTests.swift */,
 			);
 			path = RefreshControls;
+			sourceTree = "<group>";
+		};
+		84EF1DC822DD388900389815 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D9C22DD317200389815 /* Aircall.swift */,
+				84EF1DCB22DD38A500389815 /* Payloads */,
+				84EF1DCA22DD389C00389815 /* Errors */,
+				84EF1DC922DD389500389815 /* Stubs */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		84EF1DC922DD389500389815 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DA422DD332E00389815 /* getCalls.json */,
+				84EF1DA222DD332E00389815 /* resetCalls.json */,
+				84EF1DA322DD332E00389815 /* getCall.json */,
+				84EF1DA522DD332F00389815 /* archiveCall.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		84EF1DCA22DD389C00389815 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D9E22DD32B500389815 /* AircallError.swift */,
+				84EF1DA022DD32C000389815 /* AircallError+LocalizedError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		84EF1DCB22DD38A500389815 /* Payloads */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DAA22DD33A900389815 /* WSCalls.swift */,
+				84EF1DAC22DD33B000389815 /* WSCall.swift */,
+				84EF1DAE22DD33B900389815 /* WSReset.swift */,
+				84EF1DB022DD33C000389815 /* WSError.swift */,
+				84EF1DB222DD33C800389815 /* WSResponse.swift */,
+			);
+			path = Payloads;
+			sourceTree = "<group>";
+		};
+		84EF1DCC22DD38C200389815 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D5322DD213800389815 /* AircallTests.swift */,
+				84EF1DCD22DD38CE00389815 /* Payloads */,
+				84EF1DCE22DD38D800389815 /* Errors */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		84EF1DCD22DD38CE00389815 /* Payloads */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DBE22DD35C200389815 /* WSCallsTests.swift */,
+				84EF1DC022DD35CE00389815 /* WSCallTests.swift */,
+				84EF1DC222DD35D900389815 /* WSResetTests.swift */,
+			);
+			path = Payloads;
+			sourceTree = "<group>";
+		};
+		84EF1DCE22DD38D800389815 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DC622DD379000389815 /* AircallErrorTests.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
