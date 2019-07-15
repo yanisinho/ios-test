@@ -40,7 +40,8 @@ open class YSLabel: UILabel {
 		design()
 	}
 
-	/// Implemented by subclasses to initialize a new object (the receiver) immediately after memory for it has been allocated.
+	/// Implemented by subclasses to initialize a new object (the receiver)
+	/// immediately after memory for it has been allocated.
 	public convenience init() {
 		self.init(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
 	}
