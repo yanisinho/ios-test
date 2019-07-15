@@ -72,7 +72,7 @@ extension CDCall.Scope {
 
 	/// Scope titles.
 	static var titles: [String] {
-		return CDCall.Scope.allCases.map{
+		return CDCall.Scope.allCases.map {
 			$0.title
 		}
 	}
