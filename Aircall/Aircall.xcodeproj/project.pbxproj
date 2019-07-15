@@ -56,6 +56,10 @@
 		84EF1DD222DD393D00389815 /* LocalizedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DD122DD393D00389815 /* LocalizedKey.swift */; };
 		84EF1DD522DD3A2600389815 /* LocalizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DD422DD3A2600389815 /* LocalizedTests.swift */; };
 		84EF1DD722DD3A3100389815 /* LocalizedKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DD622DD3A3100389815 /* LocalizedKeyTests.swift */; };
+		84EF1DD922DD3CAC00389815 /* UIRefreshControl+Refreshing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DD822DD3CAC00389815 /* UIRefreshControl+Refreshing.swift */; };
+		84EF1DDB22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DDA22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift */; };
+		84EF1DDD22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DDC22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift */; };
+		84EF1DDF22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DDE22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -140,6 +144,10 @@
 		84EF1DD122DD393D00389815 /* LocalizedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKey.swift; sourceTree = "<group>"; };
 		84EF1DD422DD3A2600389815 /* LocalizedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedTests.swift; sourceTree = "<group>"; };
 		84EF1DD622DD3A3100389815 /* LocalizedKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeyTests.swift; sourceTree = "<group>"; };
+		84EF1DD822DD3CAC00389815 /* UIRefreshControl+Refreshing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Refreshing.swift"; sourceTree = "<group>"; };
+		84EF1DDA22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Animating.swift"; sourceTree = "<group>"; };
+		84EF1DDC22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRefreshControlRefreshingTests.swift; sourceTree = "<group>"; };
+		84EF1DDE22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewAnimatingTests.swift; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +236,8 @@
 				84EF1DC822DD388900389815 /* Network */,
 				84EF1D6F22DD271700389815 /* Theme */,
 				84EF1DD322DD397800389815 /* Localization */,
+				84EF1DD822DD3CAC00389815 /* UIRefreshControl+Refreshing.swift */,
+				84EF1DDA22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift */,
 			);
 			path = Aircall;
 			sourceTree = "<group>";
@@ -240,6 +250,8 @@
 				84EF1D9722DD30D900389815 /* Theme */,
 				84EF1DD422DD3A2600389815 /* LocalizedTests.swift */,
 				84EF1DD622DD3A3100389815 /* LocalizedKeyTests.swift */,
+				84EF1DDC22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift */,
+				84EF1DDE22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift */,
 			);
 			path = AircallTests;
 			sourceTree = "<group>";
@@ -732,11 +744,13 @@
 				84EF1DB522DD342300389815 /* CallDirection.swift in Sources */,
 				84EF1DD022DD392D00389815 /* Localized.swift in Sources */,
 				84EF1DD222DD393D00389815 /* LocalizedKey.swift in Sources */,
+				84EF1DDB22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift in Sources */,
 				84EF1D7A22DD2BFE00389815 /* YSLabel.swift in Sources */,
 				84EF1DAB22DD33A900389815 /* WSCalls.swift in Sources */,
 				84EF1DB122DD33C000389815 /* WSError.swift in Sources */,
 				84EF1D3E22DD213700389815 /* ViewController.swift in Sources */,
 				84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */,
+				84EF1DD922DD3CAC00389815 /* UIRefreshControl+Refreshing.swift in Sources */,
 				84EF1D8222DD2C8A00389815 /* ACHeaderLabel.swift in Sources */,
 				84EF1D7E22DD2C7300389815 /* ACTitleLabel.swift in Sources */,
 				84EF1D7122DD288500389815 /* ColorName.swift in Sources */,
@@ -765,10 +779,12 @@
 				84EF1D8822DD2E0A00389815 /* ACSubtitleLabelTests.swift in Sources */,
 				84EF1D9122DD300300389815 /* ThemeTests.swift in Sources */,
 				84EF1D7422DD28E800389815 /* ColorNameTests.swift in Sources */,
+				84EF1DDF22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift in Sources */,
 				84EF1DC722DD379000389815 /* AircallErrorTests.swift in Sources */,
 				84EF1DD722DD3A3100389815 /* LocalizedKeyTests.swift in Sources */,
 				84EF1DC122DD35CE00389815 /* WSCallTests.swift in Sources */,
 				84EF1D7822DD2A7000389815 /* ColorTests.swift in Sources */,
+				84EF1DDD22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift in Sources */,
 				84EF1DC322DD35D900389815 /* WSResetTests.swift in Sources */,
 				84EF1D8A22DD2E1600389815 /* ACHeaderLabelTests.swift in Sources */,
 				84EF1D5422DD213800389815 /* AircallTests.swift in Sources */,
