@@ -73,6 +73,7 @@
 		84EF1DFF22DD443800389815 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DFE22DD443800389815 /* Configurator.swift */; };
 		84EF1E0122DD44EA00389815 /* ConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0022DD44EA00389815 /* ConfiguratorTests.swift */; };
 		84EF1E0322DD453700389815 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0222DD453700389815 /* ViewModel.swift */; };
+		84EF1E0522DD456900389815 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1E0422DD456900389815 /* Coordinator.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -174,6 +175,7 @@
 		84EF1DFE22DD443800389815 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		84EF1E0022DD44EA00389815 /* ConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorTests.swift; sourceTree = "<group>"; };
 		84EF1E0222DD453700389815 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		84EF1E0422DD456900389815 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -547,6 +549,7 @@
 				84EF1DBC22DD34AF00389815 /* CallRepresentable.swift */,
 				84EF1DFC22DD442500389815 /* CallDisplayable.swift */,
 				84EF1E0222DD453700389815 /* ViewModel.swift */,
+				84EF1E0422DD456900389815 /* Coordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -875,6 +878,7 @@
 				84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */,
 				84EF1DA122DD32C000389815 /* AircallError+LocalizedError.swift in Sources */,
 				84EF1DED22DD3FCA00389815 /* CDCall+CoreDataClass.swift in Sources */,
+				84EF1E0522DD456900389815 /* Coordinator.swift in Sources */,
 				84EF1DBB22DD347900389815 /* ACDate.swift in Sources */,
 				84EF1DBD22DD34AF00389815 /* CallRepresentable.swift in Sources */,
 				84EF1D9D22DD317200389815 /* Aircall.swift in Sources */,
