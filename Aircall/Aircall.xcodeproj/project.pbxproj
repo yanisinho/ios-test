@@ -48,6 +48,9 @@
 		84EF1DB722DD342B00389815 /* CallType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DB622DD342B00389815 /* CallType.swift */; };
 		84EF1DBB22DD347900389815 /* ACDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DBA22DD347800389815 /* ACDate.swift */; };
 		84EF1DBD22DD34AF00389815 /* CallRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DBC22DD34AF00389815 /* CallRepresentable.swift */; };
+		84EF1DBF22DD35C200389815 /* WSCallsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DBE22DD35C200389815 /* WSCallsTests.swift */; };
+		84EF1DC122DD35CE00389815 /* WSCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DC022DD35CE00389815 /* WSCallTests.swift */; };
+		84EF1DC322DD35D900389815 /* WSResetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DC222DD35D900389815 /* WSResetTests.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +127,9 @@
 		84EF1DB622DD342B00389815 /* CallType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallType.swift; sourceTree = "<group>"; };
 		84EF1DBA22DD347800389815 /* ACDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACDate.swift; sourceTree = "<group>"; };
 		84EF1DBC22DD34AF00389815 /* CallRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRepresentable.swift; sourceTree = "<group>"; };
+		84EF1DBE22DD35C200389815 /* WSCallsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCallsTests.swift; sourceTree = "<group>"; };
+		84EF1DC022DD35CE00389815 /* WSCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCallTests.swift; sourceTree = "<group>"; };
+		84EF1DC222DD35D900389815 /* WSResetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSResetTests.swift; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,6 +240,9 @@
 				84EF1D5522DD213800389815 /* Info.plist */,
 				84EF1D5322DD213800389815 /* AircallTests.swift */,
 				84EF1D9722DD30D900389815 /* Theme */,
+				84EF1DBE22DD35C200389815 /* WSCallsTests.swift */,
+				84EF1DC022DD35CE00389815 /* WSCallTests.swift */,
+				84EF1DC222DD35D900389815 /* WSResetTests.swift */,
 			);
 			path = AircallTests;
 			sourceTree = "<group>";
@@ -674,10 +683,13 @@
 				84EF1D8822DD2E0A00389815 /* ACSubtitleLabelTests.swift in Sources */,
 				84EF1D9122DD300300389815 /* ThemeTests.swift in Sources */,
 				84EF1D7422DD28E800389815 /* ColorNameTests.swift in Sources */,
+				84EF1DC122DD35CE00389815 /* WSCallTests.swift in Sources */,
 				84EF1D7822DD2A7000389815 /* ColorTests.swift in Sources */,
+				84EF1DC322DD35D900389815 /* WSResetTests.swift in Sources */,
 				84EF1D8A22DD2E1600389815 /* ACHeaderLabelTests.swift in Sources */,
 				84EF1D5422DD213800389815 /* AircallTests.swift in Sources */,
 				84EF1D8622DD2DFF00389815 /* ACTitleLabelTests.swift in Sources */,
+				84EF1DBF22DD35C200389815 /* WSCallsTests.swift in Sources */,
 				84EF1D8C22DD2EB300389815 /* ACRefreshControlTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
