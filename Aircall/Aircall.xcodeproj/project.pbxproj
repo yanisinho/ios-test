@@ -22,6 +22,9 @@
 		84EF1D7822DD2A7000389815 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7722DD2A7000389815 /* ColorTests.swift */; };
 		84EF1D7A22DD2BFE00389815 /* YSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7922DD2BFE00389815 /* YSLabel.swift */; };
 		84EF1D7C22DD2C1200389815 /* YSRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7B22DD2C1200389815 /* YSRefreshControl.swift */; };
+		84EF1D7E22DD2C7300389815 /* ACTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7D22DD2C7300389815 /* ACTitleLabel.swift */; };
+		84EF1D8022DD2C7F00389815 /* ACSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7F22DD2C7F00389815 /* ACSubtitleLabel.swift */; };
+		84EF1D8222DD2C8A00389815 /* ACHeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D8122DD2C8A00389815 /* ACHeaderLabel.swift */; };
 		9C2F879DE20FD63CA70C78AA /* Pods_Aircall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A04A294A3D95F2FE812CC86 /* Pods_Aircall.framework */; };
 		FDA5BD944B7B1C7690E251A1 /* Pods_AircallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217F0549BA2452FE5D4D9F43 /* Pods_AircallUITests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,9 @@
 		84EF1D7722DD2A7000389815 /* ColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
 		84EF1D7922DD2BFE00389815 /* YSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSLabel.swift; sourceTree = "<group>"; };
 		84EF1D7B22DD2C1200389815 /* YSRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSRefreshControl.swift; sourceTree = "<group>"; };
+		84EF1D7D22DD2C7300389815 /* ACTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACTitleLabel.swift; sourceTree = "<group>"; };
+		84EF1D7F22DD2C7F00389815 /* ACSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACSubtitleLabel.swift; sourceTree = "<group>"; };
+		84EF1D8122DD2C8A00389815 /* ACHeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACHeaderLabel.swift; sourceTree = "<group>"; };
 		EF1B8CA0FEE634D9BB272EE5 /* Pods-AircallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AircallUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AircallUITests/Pods-AircallUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +212,9 @@
 				84EF1D7522DD29F000389815 /* Color.swift */,
 				84EF1D7922DD2BFE00389815 /* YSLabel.swift */,
 				84EF1D7B22DD2C1200389815 /* YSRefreshControl.swift */,
+				84EF1D7D22DD2C7300389815 /* ACTitleLabel.swift */,
+				84EF1D7F22DD2C7F00389815 /* ACSubtitleLabel.swift */,
+				84EF1D8122DD2C8A00389815 /* ACHeaderLabel.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -481,9 +490,12 @@
 				84EF1D7A22DD2BFE00389815 /* YSLabel.swift in Sources */,
 				84EF1D3E22DD213700389815 /* ViewController.swift in Sources */,
 				84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */,
+				84EF1D8222DD2C8A00389815 /* ACHeaderLabel.swift in Sources */,
+				84EF1D7E22DD2C7300389815 /* ACTitleLabel.swift in Sources */,
 				84EF1D7122DD288500389815 /* ColorName.swift in Sources */,
 				84EF1D7622DD29F000389815 /* Color.swift in Sources */,
 				84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */,
+				84EF1D8022DD2C7F00389815 /* ACSubtitleLabel.swift in Sources */,
 				84EF1D7C22DD2C1200389815 /* YSRefreshControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

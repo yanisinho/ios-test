@@ -11,7 +11,8 @@ import UIKit
 /**
 `UILabel` subclass
 
-View that displays one or more lines of read-only text, often used in conjunction with controls to describe their intended purpose.
+View that displays one or more lines of read-only text,
+often used in conjunction with controls to describe their intended purpose.
 
 [Apple's documentation for UILabel](https://developer.apple.com/documentation/uikit/uilabel)
 

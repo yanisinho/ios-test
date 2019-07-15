@@ -39,7 +39,8 @@ open class YSRefreshControl: UIRefreshControl {
 		design()
 	}
 
-	/// Implemented by subclasses to initialize a new object (the receiver) immediately after memory for it has been allocated.
+	/// Implemented by subclasses to initialize a new object (the receiver)
+	// immediately after memory for it has been allocated.
 	public convenience override init() {
 		self.init(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
 	}
