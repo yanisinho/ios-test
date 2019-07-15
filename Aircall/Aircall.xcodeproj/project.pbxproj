@@ -229,15 +229,11 @@
 			children = (
 				84EF1D4A22DD213800389815 /* Info.plist */,
 				84EF1D3B22DD213700389815 /* AppDelegate.swift */,
-				84EF1DBA22DD347800389815 /* ACDate.swift */,
-				84EF1DBC22DD34AF00389815 /* CallRepresentable.swift */,
 				84EF1D6E22DD270900389815 /* Scenes */,
-				84EF1D6D22DD26FC00389815 /* Data */,
 				84EF1DC822DD388900389815 /* Network */,
+				84EF1D6D22DD26FC00389815 /* Data */,
 				84EF1D6F22DD271700389815 /* Theme */,
-				84EF1DD322DD397800389815 /* Localization */,
-				84EF1DD822DD3CAC00389815 /* UIRefreshControl+Refreshing.swift */,
-				84EF1DDA22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift */,
+				84EF1DE422DD3DB600389815 /* Comon */,
 			);
 			path = Aircall;
 			sourceTree = "<group>";
@@ -248,10 +244,7 @@
 				84EF1D5522DD213800389815 /* Info.plist */,
 				84EF1DCC22DD38C200389815 /* Network */,
 				84EF1D9722DD30D900389815 /* Theme */,
-				84EF1DD422DD3A2600389815 /* LocalizedTests.swift */,
-				84EF1DD622DD3A3100389815 /* LocalizedKeyTests.swift */,
-				84EF1DDC22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift */,
-				84EF1DDE22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift */,
+				84EF1DE322DD3DAF00389815 /* Common */,
 			);
 			path = AircallTests;
 			sourceTree = "<group>";
@@ -466,6 +459,69 @@
 				84EF1DD122DD393D00389815 /* LocalizedKey.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		84EF1DE022DD3D7400389815 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DD822DD3CAC00389815 /* UIRefreshControl+Refreshing.swift */,
+				84EF1DDA22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84EF1DE122DD3D7B00389815 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DDC22DD3CCB00389815 /* UIRefreshControlRefreshingTests.swift */,
+				84EF1DDE22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84EF1DE222DD3D8700389815 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DD422DD3A2600389815 /* LocalizedTests.swift */,
+				84EF1DD622DD3A3100389815 /* LocalizedKeyTests.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		84EF1DE322DD3DAF00389815 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DE222DD3D8700389815 /* Localization */,
+				84EF1DE122DD3D7B00389815 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84EF1DE422DD3DB600389815 /* Comon */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DD322DD397800389815 /* Localization */,
+				84EF1DE022DD3D7400389815 /* Extensions */,
+				84EF1DE522DD3DC300389815 /* Protocols */,
+				84EF1DE622DD3DD300389815 /* Utils */,
+			);
+			path = Comon;
+			sourceTree = "<group>";
+		};
+		84EF1DE522DD3DC300389815 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DBC22DD34AF00389815 /* CallRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84EF1DE622DD3DD300389815 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DBA22DD347800389815 /* ACDate.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
