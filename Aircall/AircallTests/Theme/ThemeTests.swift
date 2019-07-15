@@ -21,12 +21,12 @@ class ThemeTests: XCTestCase {
 
 	/// Test `ThemeTests` colors.
 	func testColors() {
-		// TODO: Implements here
+
 	}
 
 	/// Test `ColorTests` color names.
 	func testText() {
-		// TODO: Implements here
+
 	}
 
 }
