@@ -6,6 +6,7 @@ target 'Aircall' do
   use_frameworks!
 
   # Pods for Aircall
+  pod 'SwiftLint'
 
   target 'AircallTests' do
     inherit! :search_paths
