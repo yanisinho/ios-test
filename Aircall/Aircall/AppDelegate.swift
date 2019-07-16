@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Configure app theme.
 		Theme()
 
-		/// Configure AppCoordinator
+		// Configure AppCoordinator.
 		let navigationController = UINavigationController()
 		coordinator = AppCoordinator(
 			navigationController: navigationController,
@@ -41,6 +41,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.rootViewController = navigationController
 		window?.makeKeyAndVisible()
+
+		// CoreData heart beat.
+		let request = NSFetchRequest<CDCall>(entityName: "CDCall")
+
+		// Retreiving calls.
+		guard let calls = try? persistentContainer.viewContext.fetch(request) else {
+			print("❤️ CoreData: calls couldn't be retreived from persistence store.")
+			return true
+		}
+		print("💚 CoreData: There are \(calls.count) calls persisted in CoreData.")
+
+		// Retreiving first call.
+		guard let call = calls.first else {
+			print("❤️ CoreData: Zero calls persisted in CoreData at this time.")
+			return true
+		}
+		print("💚 First call contains the following data: \(call.debugDescription) ")
 
 		return true
 	}
