@@ -134,7 +134,7 @@ final class CallDetailsViewModel: ViewModel {
 
 	/// Retreive `CDCall` from persistence store.
 	func defaut() {
-		let parameter = CallDetailsModelParameter(callId: model.callId)
+		let parameter = CallDetailsModel.Parameter(callId: model.callId)
 		model
 			.calls(parameter: parameter)
 			.unwrap()

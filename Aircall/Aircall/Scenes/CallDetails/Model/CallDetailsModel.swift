@@ -99,9 +99,9 @@ extension CallDetailsModel {
 
 	*/
 	func calls(
-		parameter: CallDetailsModelParameter
+		parameter: CallDetailsModel.Parameter
 		) -> Observable<CDCall?> {
-		let fetchRequest: NSFetchRequest<CDCall> = CallDetailsModelFetchRequest.requestBuilder(
+		let fetchRequest: NSFetchRequest<CDCall> = CallDetailsModel.FetchRequest.requestBuilder(
 			parameter: parameter,
 			managedObjectModel: managedObjectModel
 		)
