@@ -86,6 +86,15 @@ extension CallListViewController {
 	/// Configure RxSwift
 	func setupRxSwift() {
 
+		// Setup ViewModel.Output
+		let output = viewModel.setup(from:
+			CallListViewModel.Input(
+				refresh: tableView.refreshControl!.rx.controlEvent(.valueChanged).asObservable(),
+				reset: resetBarButtonItem.rx.tap.asObservable(),
+				select: tableView.rx.modelSelected(CDCall.self).asObservable()
+			)
+		)
+
 	}
 
 }
