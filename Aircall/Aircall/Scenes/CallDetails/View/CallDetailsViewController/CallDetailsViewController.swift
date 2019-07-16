@@ -51,6 +51,14 @@ final class CallDetailsViewController: UIViewController, CallDisplayable {
 		setupRxSwift()
 	}
 
+	override func viewWillAppear(
+		_ animated: Bool
+		) {
+		super.viewWillAppear(animated)
+		viewModel.defaut()
+		viewModel.update()
+	}
+
 }
 
 // MARK: - RxSwift
