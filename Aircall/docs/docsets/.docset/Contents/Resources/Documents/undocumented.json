@@ -78,13 +78,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Localization/LocalizedKey.swift",
-      "line": 11,
-      "symbol": "LocalizedKey",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Protocols/CallRepresentable.swift",
       "line": 13,
       "symbol": "CallRepresentable",
@@ -233,7 +226,7 @@
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Libraries/YSKit/YSRefreshControl.swift",
-      "line": 33,
+      "line": 35,
       "symbol": "YSRefreshControl.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

@@ -15,6 +15,11 @@ theme: fullwidth
 
 custom_categories:
 
+  - name: Color
+    children:
+      - ColorKey
+      - Color
+
   - name: Localization
     children:
       - LocalizedKey

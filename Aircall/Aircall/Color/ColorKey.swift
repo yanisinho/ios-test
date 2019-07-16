@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// All color names.
+/// Enumeration referencing all color keys.
 enum ColorKey: String, CaseIterable {
 
 	/// Primary color.
@@ -25,6 +25,8 @@ enum ColorKey: String, CaseIterable {
 
 	/// Background color.
 	case background
+
+	// MARK: - Computed properties
 
 	/// Retreive real color from xcassets.
 	var color: UIColor {

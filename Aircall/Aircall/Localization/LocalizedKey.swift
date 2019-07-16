@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Structure referencing all localized keys.
+/// Enumeration referencing all localized keys.
 enum LocalizedKey: String, CaseIterable {
 
 	/// Localized string representingactivity title.
@@ -50,7 +50,7 @@ enum LocalizedKey: String, CaseIterable {
 	// MARK: - Computed properties
 
 	/// Localized string.
-	var value: String {
+	var string: String {
 		switch self {
 		case .title:
 			return NSLocalizedString(

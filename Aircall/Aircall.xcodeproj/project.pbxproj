@@ -20,6 +20,7 @@
 		8479855B22DDD47D00042A11 /* CallDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479855922DDD47D00042A11 /* CallDetailsViewController.swift */; };
 		8479855C22DDD47D00042A11 /* CallDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479855A22DDD47D00042A11 /* CallDetailsViewController.xib */; };
 		8479855E22DDDD3300042A11 /* CoreDataStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479855D22DDDD3300042A11 /* CoreDataStorable.swift */; };
+		849A975F22DE1B2900950CFC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849A975E22DE1B2900950CFC /* Colors.xcassets */; };
 		84B09B7D22DDE02D000ABFC1 /* CallListModel+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B7C22DDE02D000ABFC1 /* CallListModel+Method.swift */; };
 		84B09B7F22DDE15F000ABFC1 /* CallDetailsModel+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B7E22DDE15F000ABFC1 /* CallDetailsModel+Method.swift */; };
 		84B09B8122DDE3A6000ABFC1 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B8022DDE3A6000ABFC1 /* Banner.swift */; };
@@ -138,6 +139,7 @@
 		8479855922DDD47D00042A11 /* CallDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDetailsViewController.swift; sourceTree = "<group>"; };
 		8479855A22DDD47D00042A11 /* CallDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallDetailsViewController.xib; sourceTree = "<group>"; };
 		8479855D22DDDD3300042A11 /* CoreDataStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorable.swift; sourceTree = "<group>"; };
+		849A975E22DE1B2900950CFC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		84B09B7C22DDE02D000ABFC1 /* CallListModel+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CallListModel+Method.swift"; sourceTree = "<group>"; };
 		84B09B7E22DDE15F000ABFC1 /* CallDetailsModel+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CallDetailsModel+Method.swift"; sourceTree = "<group>"; };
 		84B09B8022DDE3A6000ABFC1 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
@@ -398,7 +400,7 @@
 				84EF1DC822DD388900389815 /* Network */,
 				84EF1D6D22DD26FC00389815 /* Data */,
 				84EF1D6F22DD271700389815 /* Theme */,
-				84EF1D9222DD307D00389815 /* Colors */,
+				84EF1D9222DD307D00389815 /* Color */,
 				84EF1D9322DD308E00389815 /* Component */,
 				84EF1DD322DD397800389815 /* Localization */,
 				84EF1DE422DD3DB600389815 /* Common */,
@@ -466,13 +468,14 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		84EF1D9222DD307D00389815 /* Colors */ = {
+		84EF1D9222DD307D00389815 /* Color */ = {
 			isa = PBXGroup;
 			children = (
+				849A975E22DE1B2900950CFC /* Colors.xcassets */,
 				84EF1D7022DD288500389815 /* ColorKey.swift */,
 				84EF1D7522DD29F000389815 /* Color.swift */,
 			);
-			path = Colors;
+			path = Color;
 			sourceTree = "<group>";
 		};
 		84EF1D9322DD308E00389815 /* Component */ = {
@@ -914,6 +917,7 @@
 				8479854E22DDB15B00042A11 /* CallListViewController.xib in Resources */,
 				84EF1DA722DD332F00389815 /* getCall.json in Resources */,
 				84EF1DA822DD332F00389815 /* getCalls.json in Resources */,
+				849A975F22DE1B2900950CFC /* Colors.xcassets in Resources */,
 				84EF1DA622DD332F00389815 /* resetCalls.json in Resources */,
 				8479854922DDA9F700042A11 /* CallListTableViewCell.xib in Resources */,
 				84EF1D4622DD213800389815 /* Assets.xcassets in Resources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Holds all colors available in the app. Colors are defined inside Colors.xcassets
+/// Structure referencing all colors.
 struct Color {
 
 	/// Primary color.
