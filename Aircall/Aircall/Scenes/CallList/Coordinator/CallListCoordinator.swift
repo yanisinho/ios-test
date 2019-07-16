@@ -11,3 +11,16 @@ import Foundation
 final class CallListCoordinator {
 
 }
+
+// MARK: - Navigation
+
+extension CallListCoordinator: ShowCallDetails {
+
+	/// Accessing to call details scene.
+	func showCallDetails(
+		with callId: Int
+		) {
+
+	}
+
+}
