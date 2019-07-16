@@ -11,8 +11,6 @@
 		8479854822DDA9F700042A11 /* CallListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479854622DDA9F700042A11 /* CallListTableViewCell.swift */; };
 		8479854922DDA9F700042A11 /* CallListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479854722DDA9F700042A11 /* CallListTableViewCell.xib */; };
 		84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D3B22DD213700389815 /* AppDelegate.swift */; };
-		84EF1D3E22DD213700389815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D3D22DD213700389815 /* ViewController.swift */; };
-		84EF1D4122DD213700389815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1D3F22DD213700389815 /* Main.storyboard */; };
 		84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D4222DD213700389815 /* Aircall.xcdatamodeld */; };
 		84EF1D4622DD213800389815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1D4522DD213800389815 /* Assets.xcassets */; };
 		84EF1D4922DD213800389815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1D4722DD213800389815 /* LaunchScreen.storyboard */; };
@@ -117,8 +115,6 @@
 		8479854722DDA9F700042A11 /* CallListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallListTableViewCell.xib; sourceTree = "<group>"; };
 		84EF1D3822DD213700389815 /* Aircall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aircall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EF1D3B22DD213700389815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84EF1D3D22DD213700389815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84EF1D4022DD213700389815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84EF1D4322DD213700389815 /* Aircall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aircall.xcdatamodel; sourceTree = "<group>"; };
 		84EF1D4522DD213800389815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EF1D4822DD213800389815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -354,9 +350,7 @@
 		84EF1D6E22DD270900389815 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1D3F22DD213700389815 /* Main.storyboard */,
 				8479854A22DDB08400042A11 /* LaunchScreen */,
-				84EF1D3D22DD213700389815 /* ViewController.swift */,
 				84EF1E1622DD468D00389815 /* CallList */,
 				84EF1E1722DD469100389815 /* CallDetails */,
 			);
@@ -829,7 +823,6 @@
 				84EF1DA622DD332F00389815 /* resetCalls.json in Resources */,
 				8479854922DDA9F700042A11 /* CallListTableViewCell.xib in Resources */,
 				84EF1D4622DD213800389815 /* Assets.xcassets in Resources */,
-				84EF1D4122DD213700389815 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -999,7 +992,6 @@
 				84EF1D7A22DD2BFE00389815 /* YSLabel.swift in Sources */,
 				84EF1DAB22DD33A900389815 /* WSCalls.swift in Sources */,
 				84EF1DB122DD33C000389815 /* WSError.swift in Sources */,
-				84EF1D3E22DD213700389815 /* ViewController.swift in Sources */,
 				84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */,
 				84EF1E0722DD461900389815 /* AppCoordinator.swift in Sources */,
 				84EF1E0F22DD465E00389815 /* CallListCoordinator.swift in Sources */,
@@ -1086,14 +1078,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84EF1D3F22DD213700389815 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84EF1D4022DD213700389815 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84EF1D4722DD213800389815 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
