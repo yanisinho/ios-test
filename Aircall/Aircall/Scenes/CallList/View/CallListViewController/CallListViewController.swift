@@ -100,6 +100,16 @@ extension CallListViewController {
 			.bind(to: tableView.rx.items(dataSource: dataSource))
 			.disposed(by: disposeBag)
 
+		// Bind refresh control
+		if let refreshControl = tableView.refreshControl {
+			output.isLoading
+				.drive(onNext: { isLoading in
+					DispatchQueue.main.async {
+						refreshControl.refreshing(isLoading)
+					}
+				}).disposed(by: disposeBag)
+		}
+
 	}
 
 }
