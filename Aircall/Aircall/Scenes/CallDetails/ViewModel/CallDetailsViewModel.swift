@@ -11,6 +11,7 @@ import RxCocoa
 import Foundation
 import Moya
 
+//swiftlint:disable identifier_name type_name
 final class CallDetailsViewModel: ViewModel {
 
 	typealias In = Input
@@ -80,7 +81,6 @@ final class CallDetailsViewModel: ViewModel {
 	/// Emits an event when table view refreshing status changed.
 	private var errorBehavior: BehaviorRelay<WSError?>
 
-
 	init(
 		provider: MoyaProvider<Aircall>,
 		decoder: JSONDecoder,
@@ -108,6 +108,27 @@ final class CallDetailsViewModel: ViewModel {
 	func setup(
 		from input: CallDetailsViewModel.Input
 		) -> CallDetailsViewModel.Output {
+
+		input.archive.flatMap({ _ in
+			self.archiveCall(id: self.model.callId)
+		}).subscribe(onNext: { event in
+			self.onNext(event: event)
+		}, onError: { error in
+			self.onError(error: error)
+		}).disposed(by: disposeBag)
+
+		let success = successBehavior.asDriver().unwrap()
+
+		return CallDetailsViewModel.Output(
+			title: success.map {$0.from},
+			from: success.map {$0.from},
+			to: success.map {($0.to, $0.type)},
+			createdAt: success.map {$0.createdAt},
+			type: success.map {$0.type},
+			direction: success.map {$0.direction},
+			archived: success.map {$0.isArchived},
+			error: errorBehavior.asDriver().unwrap()
+		)
 
 	}
 
@@ -161,3 +182,46 @@ extension CallDetailsViewModel {
 	}
 
 }
+
+// MARK: - Side effects
+
+extension CallDetailsViewModel {
+
+	/**
+
+	Side effects when an event is emitted.
+
+	- Parameters:
+	  - event: The event to use.
+
+	*/
+	private func onNext(
+		event: Event<WSCall>
+		) {
+		switch event {
+		case .next(let call):
+			model.update(call: call)
+			successBehavior.accept(call)
+		case .error(let error):
+			errorBehavior.accept(AircallError.payload(from: error))
+		case .completed:
+			break
+		}
+	}
+
+	/**
+
+	Side effects when an error is emitted.
+
+	- Parameters:
+	  - event: The event to use.
+
+	*/
+	private func onError(
+		error: Error
+		) {
+		errorBehavior.accept(AircallError.payload(from: error))
+	}
+
+}
+//swiftlint:enable identifier_name type_name
