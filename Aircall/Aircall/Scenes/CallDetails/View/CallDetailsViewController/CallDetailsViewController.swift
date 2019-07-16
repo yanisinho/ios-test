@@ -47,6 +47,7 @@ final class CallDetailsViewController: UIViewController, CallDisplayable {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		view.backgroundColor = Color.background
 		navigationItem.setRightBarButton(archiveBarButtonItem, animated: false)
 		setupRxSwift()
 	}

@@ -10,7 +10,7 @@ import Foundation
 
 extension CallListModel {
 
-	/// Search parameters.
+	/// Parameters used by `FetchRequest`.
 	struct Parameter {
 
 		/// Search scope.
@@ -18,6 +18,8 @@ extension CallListModel {
 
 		/// Search ascending.
 		let ascending: Bool
+
+		// MARK: - Initializer
 
 		/**
 

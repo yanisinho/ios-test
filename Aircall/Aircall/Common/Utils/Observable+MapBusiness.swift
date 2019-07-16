@@ -19,7 +19,7 @@ extension ObservableType where E: Response {
 		  - payload: Payload to decode.
 		  - decoder: JSONDecoder to use for producing the payload.
 
-		- Returns: Usable payload, or meaning business error.
+		- Returns: Usable payload, or meanful error.
 
 	*/
 	func mapBusiness<P: Decodable>(

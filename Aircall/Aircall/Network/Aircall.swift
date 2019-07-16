@@ -12,6 +12,8 @@ import Alamofire
 /// Aircall API definition.
 enum Aircall: TargetType {
 
+	// MARK: - Endpoints
+
 	/// Retreive calls.
 	case getCalls
 
@@ -23,6 +25,8 @@ enum Aircall: TargetType {
 
 	/// Archive call
 	case archiveCall(callId: Int)
+
+	// MARK: - TargetType
 
 	/// The target’s base URL.
 	var baseURL: URL {

@@ -320,6 +320,15 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		849A976022DE1D6800950CFC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1DB422DD342300389815 /* CallDirection.swift */,
+				84EF1DB622DD342B00389815 /* CallType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		84B09B8822DDE9D8000ABFC1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,8 +447,6 @@
 			isa = PBXGroup;
 			children = (
 				84EF1D4222DD213700389815 /* Aircall.xcdatamodeld */,
-				84EF1DB422DD342300389815 /* CallDirection.swift */,
-				84EF1DB622DD342B00389815 /* CallType.swift */,
 				84EF1DEC22DD3FCA00389815 /* CDCall+CoreDataClass.swift */,
 				84EF1DEE22DD3FD400389815 /* CDCall+CoreDataProperties.swift */,
 				84EF1DF222DD41DA00389815 /* CDCall+Scope.swift */,
@@ -668,6 +675,7 @@
 		84EF1DE422DD3DB600389815 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				849A976022DE1D6800950CFC /* Enums */,
 				84EF1DE022DD3D7400389815 /* Extensions */,
 				84EF1DE622DD3DD300389815 /* Utils */,
 				84EF1DE522DD3DC300389815 /* Protocols */,

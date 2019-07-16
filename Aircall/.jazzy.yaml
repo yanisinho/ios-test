@@ -15,6 +15,45 @@ theme: fullwidth
 
 custom_categories:
 
+  - name: Architecture
+    children:
+      - AppDelegate
+      - AppCoordinator
+      - Coordinator
+      - ViewModel
+
+  - name: Network
+    children:
+      - Aircall
+      - AircallError
+      - ObservableType
+
+  - name: Payload
+    children:
+      - WSCalls
+      - WSCall
+      - WSReset
+      - WSError
+      - WSResponse
+      - CallType
+      - CallDirection
+
+  - name: CoreData
+    children:
+      - CDCall
+      - RxDataSources
+
+  - name: Component
+    children:
+      - ACTitleLabel
+      - ACSubtitleLabel
+      - ACHeaderLabel
+      - ACRefreshControl
+
+  - name: Theme
+    children:
+      - Theme
+
   - name: Color
     children:
       - ColorKey
@@ -25,12 +64,40 @@ custom_categories:
       - LocalizedKey
       - LocalizedString
 
-  - name: Component
+  - name: CallList
     children:
-      - ACTitleLabel
-      - ACSubtitleLabel
-      - ACHeaderLabel
-      - ACRefreshControl
+      - CallListModel
+      - CallListViewController
+      - CallListTableViewCell
+      - CallListViewModel
+      - CallListCoordinator
+      - ShowCallDetails
+
+  - name: CallDetails
+    children:
+      - CallDetailsModel
+      - CallDetailsViewController
+      - CallDetailsTableViewCell
+      - CallDetailsViewModel
+      - CallDetailsCoordinator
+
+  - name: Utils
+    children:
+      - ACDate
+      - Banner
+      - Configurator
+
+  - name: Protocol
+    children:
+      - CallDisplayable
+      - CallRepresentable
+      - CoreDataStorable
+      - Sortable
+
+  - name: Extension
+    children:
+      - UIActivityIndicatorView
+      - UIRefreshControl
 
   - name: YSKit
     children:

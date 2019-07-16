@@ -10,11 +10,13 @@ import Foundation
 
 extension CallDetailsModel {
 
-	/// Search parameters.
+	/// Parameters used by `FetchRequest`.
 	struct Parameter {
 
 		/// Call identifier.
 		let callId: Int
+
+		// MARK: - Initializer
 
 		/**
 

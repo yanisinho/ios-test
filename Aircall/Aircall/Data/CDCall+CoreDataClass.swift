@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+/// CoreData entity representing Call.
 @objc(CDCall)
 public class CDCall: NSManagedObject {
 

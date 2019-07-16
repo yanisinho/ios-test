@@ -10,6 +10,7 @@ import CoreData
 
 extension CallListModel {
 
+	/// `NSFetchRequest` used by `CallDetailsModel`.
 	struct FetchRequest {
 
 		/**

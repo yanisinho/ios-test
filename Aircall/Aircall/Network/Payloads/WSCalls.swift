@@ -18,8 +18,12 @@ For more informations, please visit the [official documentation](https://github.
 */
 struct WSCalls: Decodable {
 
+	// MARK: - Properties
+
 	/// Calls sent back from endpoint.
 	let calls: [WSCall]
+
+	// MARK: - Initializer
 
 	/**
 

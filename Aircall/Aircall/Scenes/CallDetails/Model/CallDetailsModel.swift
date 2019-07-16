@@ -14,11 +14,15 @@ struct CallDetailsModel: CoreDataStorable {
 	/// Call identifier.
 	let callId: Int
 
+	// MARK: - CoreData
+
 	/// `CoreData` managed object context.
 	internal var managedObjectContext: NSManagedObjectContext
 
 	/// `CoreData` managed object model.
 	internal var managedObjectModel: NSManagedObjectModel
+
+	// MARK: - Initializer
 
 	/**
 

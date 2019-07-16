@@ -16,10 +16,10 @@ extension CDCall {
 		/// All `CDCall` entities.
 		case all
 
-		/// All `CDCall` entities with isArchived property set to true.
+		/// All `CDCall` entities with `isArchived` property set to true.
 		case archived
 
-		/// All `CDCall` entities with isArchived property set to false.
+		/// All `CDCall` entities with `isArchived` property set to false.
 		case unarchived
 
 	}

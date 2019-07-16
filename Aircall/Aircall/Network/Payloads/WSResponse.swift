@@ -28,6 +28,8 @@ struct WSResponse: Decodable {
     case message
 	}
 
+	// MARK: - Initializer
+
 	/// Custom `ServiceResponse` decoding.
 	init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)

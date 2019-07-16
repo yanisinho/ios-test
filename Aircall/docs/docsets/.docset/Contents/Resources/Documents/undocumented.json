@@ -113,107 +113,9 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
-      "line": null,
-      "symbol": "CDCall",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
-      "line": null,
-      "symbol": "CDCall",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
-      "line": null,
-      "symbol": "CDCall",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
-      "line": null,
-      "symbol": "CDCall",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
-      "line": null,
-      "symbol": "CDCall",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
-      "line": 13,
-      "symbol": "CDCall",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
-      "line": 15,
-      "symbol": "CDCall.fetchRequest()",
-      "symbol_kind": "source.lang.swift.decl.function.method.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
-      "line": 19,
-      "symbol": "CDCall.created",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
-      "line": 22,
-      "symbol": "CDCall.id",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
       "line": 23,
-      "symbol": "CDCall.direction",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
-      "line": 24,
-      "symbol": "CDCall.via",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
-      "line": 25,
-      "symbol": "CDCall.isArchived",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
-      "line": 27,
-      "symbol": "CDCall.duration",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
-      "line": 35,
-      "symbol": "CDCall.dateShort",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
-      "line": 39,
-      "symbol": "CDCall.dayString",
+      "symbol": "CDCall.created",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
@@ -240,63 +142,63 @@
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
-      "line": 93,
+      "line": 70,
       "symbol": "WSCall.CodingKeys.id",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
-      "line": 94,
+      "line": 71,
       "symbol": "WSCall.CodingKeys.from",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
-      "line": 95,
+      "line": 72,
       "symbol": "WSCall.CodingKeys.to",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
-      "line": 96,
+      "line": 73,
       "symbol": "WSCall.CodingKeys.via",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
-      "line": 97,
+      "line": 74,
       "symbol": "WSCall.CodingKeys.isArchived",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
-      "line": 98,
+      "line": 75,
       "symbol": "WSCall.CodingKeys.duration",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
-      "line": 99,
+      "line": 76,
       "symbol": "WSCall.CodingKeys.created",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
-      "line": 100,
+      "line": 77,
       "symbol": "WSCall.CodingKeys.callDirection",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
-      "line": 101,
+      "line": 78,
       "symbol": "WSCall.CodingKeys.callType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -341,13 +243,6 @@
       "line": 12,
       "symbol": "CallDetailsCoordinator",
       "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/Model/CallDetailsModel+FetchRequest.swift",
-      "line": 13,
-      "symbol": "CallDetailsModel.FetchRequest",
-      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
@@ -481,13 +376,6 @@
       "line": 14,
       "symbol": "CallListCoordinator",
       "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/Model/CallListModel+FetchRequest.swift",
-      "line": 13,
-      "symbol": "CallListModel.FetchRequest",
-      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {

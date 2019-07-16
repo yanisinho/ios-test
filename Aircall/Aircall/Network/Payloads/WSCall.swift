@@ -33,10 +33,10 @@ struct WSCall: Codable, CallRepresentable {
 	/// Aircall number used for the call.
 	var via: String
 
-	/// Call archiving status
+	/// Call archiving status.
 	let isArchived: Bool
 
-	/// Duration of the call
+	/// Call duration in seconds.
 	var duration: Int
 
 	/// Creation date.
@@ -47,29 +47,6 @@ struct WSCall: Codable, CallRepresentable {
 
 	/// Call direction.
 	var callDirection: CallDirection
-
-	/// Custom initializer.
-	init(
-		id: Int,
-		from: String,
-		to: String,
-		via: String,
-		isArchived: Bool,
-		duration: Int,
-		created: Date,
-		callType: CallType,
-		callDirection: CallDirection
-		) {
-		self.id = id
-		self.from = from
-		self.to = to
-		self.via = via
-		self.isArchived = isArchived
-		self.duration = duration
-		self.created = created
-		self.callType = callType
-		self.callDirection = callDirection
-	}
 
 	// MARK: - Computed properties
 
@@ -99,6 +76,46 @@ struct WSCall: Codable, CallRepresentable {
 		case created = "createdAt"
 		case callDirection = "direction"
 		case callType
+	}
+
+	// MARK: - Initializer
+
+	/**
+
+	Creates a new instance from parameters.
+
+	- Parameters:
+	  - id: Unique ID of call.
+	  - from: Caller's number.
+	  - to: Callee's number.
+	  - via: Aircall number used for the call.
+	  - isArchived: Call archiving status.
+	  - duration: Call duration in seconds.
+	  - created: Creation date.
+	  - callType: Call type.
+	  - callDirection: Call direction.
+
+	*/
+	init(
+		id: Int,
+		from: String,
+		to: String,
+		via: String,
+		isArchived: Bool,
+		duration: Int,
+		created: Date,
+		callType: CallType,
+		callDirection: CallDirection
+		) {
+		self.id = id
+		self.from = from
+		self.to = to
+		self.via = via
+		self.isArchived = isArchived
+		self.duration = duration
+		self.created = created
+		self.callType = callType
+		self.callDirection = callDirection
 	}
 
 	/**
