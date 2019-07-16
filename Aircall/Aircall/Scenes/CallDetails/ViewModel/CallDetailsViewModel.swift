@@ -112,3 +112,52 @@ final class CallDetailsViewModel: ViewModel {
 	}
 
 }
+
+// MARK: - Network
+
+extension CallDetailsViewModel {
+
+	/// Represents an observable of call
+	typealias CallEvent = Observable<Event<WSCall>>
+
+	/**
+
+	Retreive call from web service.
+
+	- Parameters:
+	- id: The call identifier.
+
+	- Returns: Observable of Event<Call>
+
+	*/
+	private func getCall(
+		id: Int
+		) -> CallEvent {
+		return provider.rx
+			.request(.getCall(callId: id))
+			.asObservable()
+			.mapBusiness(payload: WSCall.self, using: decoder)
+			.materialize()
+	}
+
+	/**
+
+	Archive call from web service.
+
+	- Parameters:
+	- id: The call identifier.
+
+	- Returns: Observable of Event<WSCall>
+
+	*/
+	private func archiveCall(
+		id: Int
+		) -> CallEvent {
+		return provider.rx
+			.request(.archiveCall(callId: id))
+			.asObservable()
+			.mapBusiness(payload: WSCall.self, using: decoder)
+			.materialize()
+	}
+
+}
