@@ -6,7 +6,9 @@
 //  Copyright © 2019 Yanis SG. All rights reserved.
 //
 
-import Foundation
+import RxSwift
+import RxCocoa
+import Moya
 
 final class CallListViewModel: ViewModel {
 
@@ -22,9 +24,50 @@ final class CallListViewModel: ViewModel {
 
 	}
 
+	// MARK: - BehaviorRelay
+
+	/// Emits an event when table view refreshing status changed.
+	private var isLoadingBehavior: BehaviorRelay<Bool>
+
+	/// Emits an event when table view refreshing status changed.
+	private var errorBehavior: BehaviorRelay<WSError?>
+
 	/// `CallListViewModel` output.
 	struct Output {
 
+	}
+
+	// MARK: - Properties
+
+	/// Moya provider used for web services.
+	private let provider: MoyaProvider<Aircall>
+
+	/// JSONDecoder used with web services.
+	private let decoder: JSONDecoder
+
+	/// Coordinator
+	weak var coordinator: ShowCallDetails?
+
+	/// Model coordinator
+	private let model: CallListModel
+
+	/// RxSwift dispose bag
+	private let disposeBag = DisposeBag()
+
+		// MARK: - Initializer
+
+	init(
+		provider: MoyaProvider<Aircall>,
+		decoder: JSONDecoder,
+		coordinator: CallListCoordinator,
+		model: CallListModel
+		) {
+		self.provider = provider
+		self.decoder = decoder
+		self.coordinator = coordinator
+		self.model = model
+		self.errorBehavior = BehaviorRelay(value: nil)
+		self.isLoadingBehavior = BehaviorRelay(value: false)
 	}
 
 	/**
@@ -43,6 +86,52 @@ final class CallListViewModel: ViewModel {
 
 		return Output()
 
+	}
+
+}
+
+// MARK: - Network
+
+extension CallListViewModel {
+
+	/// Represents an observable of calls
+	typealias CallsEvent = Observable<Event<WSCalls>>
+	typealias ResetEvent = Observable<Event<WSReset>>
+
+	/**
+
+	Retreive calls from web service.
+
+	- Parameters:
+	  - id: The call identifier.
+
+	- Returns: Observable of Event<WSCalls>
+
+	*/
+	private func getCalls() -> CallsEvent {
+		return provider.rx
+			.request(.getCalls)
+			.asObservable()
+			.mapBusiness(payload: WSCalls.self, using: decoder)
+			.materialize()
+	}
+
+	/**
+
+	Reset calls from web service.
+
+	- Parameters:
+	  - id: The call identifier.
+
+	- Returns: Observable of Event<WSCalls>
+
+	*/
+	private func resetCalls() -> ResetEvent {
+		return provider.rx
+			.request(.resetCalls)
+			.asObservable()
+			.mapBusiness(payload: WSReset.self, using: decoder)
+			.materialize()
 	}
 
 }
