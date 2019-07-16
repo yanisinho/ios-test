@@ -86,15 +86,7 @@ extension CallDetailsViewController {
 			.disposed(by: disposeBag)
 
 		// Bind to value.
-		output.to.map({ to, type in
-			switch type {
-			case "missed":
-				return Localized.missed
-			case "voicemail":
-				return Localized.voicemail
-			default:
-				return to
-			}})
+		output.to
 			.drive(toLabel.rx.text)
 			.disposed(by: disposeBag)
 

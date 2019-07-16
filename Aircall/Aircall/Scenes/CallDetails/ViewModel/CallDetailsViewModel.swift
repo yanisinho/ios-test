@@ -39,7 +39,7 @@ final class CallDetailsViewModel: ViewModel {
 		var from: Driver<String>
 
 		/// Driver representing to property.
-		var to: Driver<(String, String)>
+		var to: Driver<String>
 
 		/// Driver representing createdAt property.
 		var createdAt: Driver<String>
@@ -122,7 +122,16 @@ final class CallDetailsViewModel: ViewModel {
 		return CallDetailsViewModel.Output(
 			title: success.map {$0.from},
 			from: success.map {$0.from},
-			to: success.map {($0.to, $0.type)},
+			to: success.map {
+				switch $0.type {
+				case "missed":
+					return Localized.missed
+				case "voicemail":
+					return Localized.voicemail
+				default:
+					return $0.to
+				}
+			},
 			createdAt: success.map {$0.createdAt},
 			type: success.map {$0.type},
 			direction: success.map {$0.direction},
