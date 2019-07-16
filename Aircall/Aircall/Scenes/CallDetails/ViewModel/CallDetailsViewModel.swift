@@ -10,6 +10,4 @@ import Foundation
 
 final class CallDetailsViewModel {
 
-	
-
 }

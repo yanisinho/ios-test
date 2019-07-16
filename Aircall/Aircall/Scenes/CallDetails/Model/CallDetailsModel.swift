@@ -107,8 +107,7 @@ extension CallDetailsModel {
 		)
 		return managedObjectContext.rx
 			.entities(fetchRequest: fetchRequest)
-			.map{$0.first}
+			.map {$0.first}
 	}
 
 }
-
