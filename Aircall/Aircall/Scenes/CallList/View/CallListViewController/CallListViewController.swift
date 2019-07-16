@@ -131,3 +131,17 @@ extension CallListViewController {
 	}
 
 }
+
+// MARK: - UITableViewDelegate
+
+extension CallListViewController {
+
+	override func tableView(
+		_ tableView: UITableView,
+		viewForHeaderInSection section: Int
+		) -> UIView? {
+		return ACHeaderLabel(title: dataSource[section].model)
+	}
+
+}
+
