@@ -34,17 +34,10 @@ final class CallListTableViewCell: UITableViewCell, CallDisplayable, NibReusable
 			selected,
 			animated: animated
 		)
-		if selected {
-			fromLabel.textColor = Color.secondary
-			toLabel.textColor = Color.secondary
-			createAtLabel.textColor = Color.secondary
-			backgroundColor = Color.primary
-		} else {
-			fromLabel.textColor = Color.title
-			toLabel.textColor = Color.subtitle
-			createAtLabel.textColor = Color.subtitle
-			backgroundColor = Color.secondary
-		}
+			fromLabel.textColor = selected ? Color.secondary : Color.title
+			toLabel.textColor = selected ? Color.secondary : Color.subtitle
+			createAtLabel.textColor = selected ? Color.secondary : Color.subtitle
+			backgroundColor = selected ? Color.primary : Color.secondary
 	}
 
 }

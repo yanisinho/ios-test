@@ -6,7 +6,6 @@
 //  Copyright © 2019 Yanis SG. All rights reserved.
 //
 
-import Foundation
 import CoreData
 
 extension CallListModel {
