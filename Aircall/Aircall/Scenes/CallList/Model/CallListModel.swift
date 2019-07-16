@@ -47,13 +47,13 @@ extension CallListModel {
 
 	/**
 
-	Save `CDCall` entities inside persistence store.
+	Update `CDCall` entities inside persistence store.
 
 	- Parameters:
 	  - calls: Calls to persist.
 
 	*/
-	func save(calls: [WSCall]) {
+	func update(calls: [WSCall]) {
 		calls.forEach { call in
 			guard let newCall = NSEntityDescription.insertNewObject(
 				forEntityName: "CDCall",

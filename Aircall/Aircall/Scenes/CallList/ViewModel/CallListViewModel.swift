@@ -235,7 +235,7 @@ extension CallListViewModel {
 		) {
 		switch event {
 		case .next(let content):
-			model.save(calls: content.calls)
+			model.update(calls: content.calls)
 		case .error(let error):
 			errorBehavior.accept(AircallError.payload(from: error))
 		case .completed:
