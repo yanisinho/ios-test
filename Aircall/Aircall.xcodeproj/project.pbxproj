@@ -12,6 +12,7 @@
 		8479854922DDA9F700042A11 /* CallListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479854722DDA9F700042A11 /* CallListTableViewCell.xib */; };
 		8479854D22DDB15B00042A11 /* CallListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479854B22DDB15B00042A11 /* CallListViewController.swift */; };
 		8479854E22DDB15B00042A11 /* CallListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479854C22DDB15B00042A11 /* CallListViewController.xib */; };
+		8479855022DDB64500042A11 /* ShowCallDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479854F22DDB64500042A11 /* ShowCallDetails.swift */; };
 		84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D3B22DD213700389815 /* AppDelegate.swift */; };
 		84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D4222DD213700389815 /* Aircall.xcdatamodeld */; };
 		84EF1D4622DD213800389815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1D4522DD213800389815 /* Assets.xcassets */; };
@@ -117,6 +118,7 @@
 		8479854722DDA9F700042A11 /* CallListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallListTableViewCell.xib; sourceTree = "<group>"; };
 		8479854B22DDB15B00042A11 /* CallListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListViewController.swift; sourceTree = "<group>"; };
 		8479854C22DDB15B00042A11 /* CallListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallListViewController.xib; sourceTree = "<group>"; };
+		8479854F22DDB64500042A11 /* ShowCallDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCallDetails.swift; sourceTree = "<group>"; };
 		84EF1D3822DD213700389815 /* Aircall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aircall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EF1D3B22DD213700389815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EF1D4322DD213700389815 /* Aircall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aircall.xcdatamodel; sourceTree = "<group>"; };
@@ -602,6 +604,7 @@
 				84EF1DFC22DD442500389815 /* CallDisplayable.swift */,
 				84EF1E0222DD453700389815 /* ViewModel.swift */,
 				84EF1E0422DD456900389815 /* Coordinator.swift */,
+				8479854F22DDB64500042A11 /* ShowCallDetails.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -986,6 +989,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8479855022DDB64500042A11 /* ShowCallDetails.swift in Sources */,
 				84EF1DF522DD428B00389815 /* CDCall+IdentifiableType.swift in Sources */,
 				84EF1DB322DD33C800389815 /* WSResponse.swift in Sources */,
 				84EF1DB522DD342300389815 /* CallDirection.swift in Sources */,
