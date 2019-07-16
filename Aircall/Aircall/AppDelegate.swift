@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		// Retreiving first call.
 		guard let call = calls.first else {
-			print("❤️ CoreData: Zero calls persisted in CoreData at this time.")
+			print("❤️ CoreData: 0 calls persisted in CoreData at this time.")
 			return true
 		}
 		print("💚 First call contains the following data: \(call.debugDescription) ")

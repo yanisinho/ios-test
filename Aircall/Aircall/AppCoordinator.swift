@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import CoreData
+import Moya
 
 /// Application main coordinator.
 final class AppCoordinator: NSObject, Coordinator {
@@ -26,10 +27,26 @@ final class AppCoordinator: NSObject, Coordinator {
 		navigationController.delegate = self
 		navigationController.navigationBar.prefersLargeTitles = true
 
+		// Configure MoyaProvider.
+		let provider = MoyaProvider<Aircall>(
+			plugins: [NetworkLoggerPlugin(verbose: true)]
+		)
+
 		// Configure JSONDecoder
 		let decoder = JSONDecoder()
 		decoder.dateDecodingStrategy = .iso8601
 		decoder.keyDecodingStrategy = .convertFromSnakeCase
+
+		let child = CallListCoordinator(
+			navigationController: navigationController,
+			managedObjectContext: managedObjectContext,
+			managedObjectModel: managedObjectModel,
+			provider: provider,
+			decoder: decoder
+		)
+		child.parentCoordinator = self
+		childCoordinators.append(child)
+		child.start()
 	}
 
 	// MARK: - CoreData stack
@@ -83,7 +100,12 @@ extension AppCoordinator: UINavigationControllerDelegate {
 	willShow viewController: UIViewController,
 	animated: Bool
 	) {
-
+		switch viewController {
+		case is CallListViewController:
+			print("CallListViewController")
+		default:
+			print("Unknown view controller")
+		}
 	}
 
 	/**
