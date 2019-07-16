@@ -38,7 +38,7 @@ extension AircallError: LocalizedError {
 	public var helpAnchor: String? {
 		switch self {
 		case .undocumented:
-			return "https://poeditor.com/docs/error_codes"
+			return "https://github.com/aircall/ios-test"
 		}
 	}
 
