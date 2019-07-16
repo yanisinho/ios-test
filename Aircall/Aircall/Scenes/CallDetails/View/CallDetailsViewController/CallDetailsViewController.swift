@@ -98,6 +98,11 @@ extension CallDetailsViewController {
 			.drive(toLabel.rx.text)
 			.disposed(by: disposeBag)
 
+		// Bind createdAt value.
+		output.createdAt
+			.drive(createAtLabel.rx.text)
+			.disposed(by: disposeBag)
+
 	}
 
 }
