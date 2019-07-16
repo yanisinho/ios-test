@@ -71,6 +71,25 @@ final class CallListCoordinator: Coordinator {
 	/// Start the current coordinator.
 	func start() {
 
+		// Prepare viewController
+		let viewController = CallListViewController(
+			viewModel: CallListViewModel(
+				provider: provider,
+				decoder: decoder,
+				coordinator: self,
+				model: CallListModel(
+					managedObjectContext: managedObjectContext,
+					managedObjectModel: managedObjectModel
+				)
+			)
+		)
+
+		// Push controller into navigation stack.
+		navigationController.pushViewController(
+			viewController,
+			animated: false
+		)
+
 	}
 
 }
