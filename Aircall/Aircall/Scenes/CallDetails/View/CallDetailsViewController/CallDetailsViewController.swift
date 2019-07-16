@@ -104,8 +104,14 @@ extension CallDetailsViewController {
 			.disposed(by: disposeBag)
 
 		// Bind type.
-		output.type.map{ UIImage(named: $0) }
+		output.type
+			.map{ UIImage(named: $0) }
 			.drive(typeImageView.rx.image)
+			.disposed(by: disposeBag)
+
+		// Bind direction.
+		output.direction.map{ UIImage(named: $0) }
+			.drive(directionImageView.rx.image)
 			.disposed(by: disposeBag)
 
 	}
