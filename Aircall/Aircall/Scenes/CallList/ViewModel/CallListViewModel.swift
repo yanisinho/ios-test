@@ -153,7 +153,7 @@ final class CallListViewModel: ViewModel {
 		}).disposed(by: disposeBag)
 
 		let data = model.calls(
-			parameter: CallListModelParameter(scope: .unarchived)
+			parameter: CallListModel.Parameter(scope: .unarchived)
 		)
 
 		return Output(

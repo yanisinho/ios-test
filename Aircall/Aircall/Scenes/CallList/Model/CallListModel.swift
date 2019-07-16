@@ -89,15 +89,15 @@ extension CallListModel {
 	Retreive `CDCall` entities from persistence store.
 
 	- Parameters:
-	  - fetchRequest: `CoreData` fetch request used to retreive entities.
+	  - parameter: Parameter to use with the fetch request.
 
 	- Returns: An item which is made to populate an `UITableView` or `UICollectionView`.
 
 	*/
 	func calls(
-		parameter: CallListModelParameter
+		parameter: CallListModel.Parameter
 		) -> Observable<[AnimatableSectionModel<String, CDCall>]> {
-		let fetchRequest: NSFetchRequest<CDCall> = CallListModelFetchRequest.requestBuilder(
+		let fetchRequest: NSFetchRequest<CDCall> = CallListModel.FetchRequest.requestBuilder(
 			parameter: parameter,
 			managedObjectModel: managedObjectModel
 		)
