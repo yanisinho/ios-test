@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import CoreData
 
 /// This class is responsable for manipulating the persistence store.
@@ -35,6 +36,45 @@ final class CallListModel {
 		) {
 		self.managedObjectContext = managedObjectContext
 		self.managedObjectModel = managedObjectModel
+	}
+
+}
+
+// MARK: - Create
+
+extension CallListModel {
+
+	/**
+
+	Save `CDCall` entities inside persistence store.
+
+	- Parameters:
+	  - calls: Calls to persist.
+
+	*/
+	func save(calls: [WSCall]) {
+		calls.forEach { call in
+			guard let newCall = NSEntityDescription.insertNewObject(
+				forEntityName: "CDCall",
+				into: managedObjectContext
+				) as? CDCall else {
+					print("❤️ CoreData: Couldn't insert new CDCall in persistence store.")
+				return
+			}
+			newCall.id = Int32(call.id)
+			newCall.created = call.created as NSDate
+			newCall.direction = call.direction
+			newCall.from = call.from
+			newCall.to = call.to
+			newCall.via = call.via
+			newCall.duration = Int32(call.duration)
+			newCall.type = call.type
+			newCall.isArchived = call.isArchived
+		}
+		guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+			fatalError("AppDelegate couldn't be retreived.")
+		}
+		appDelegate.saveContext()
 	}
 
 }
