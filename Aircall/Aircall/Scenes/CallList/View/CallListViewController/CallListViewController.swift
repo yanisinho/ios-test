@@ -121,6 +121,13 @@ extension CallListViewController {
 			banner.show(bannerPosition: .bottom)
 		}).disposed(by: disposeBag)
 
+		// Configure cell selection.
+		output.select
+			.subscribe(onNext: { call in
+				print(call)
+			})
+			.disposed(by: disposeBag)
+
 	}
 
 }
