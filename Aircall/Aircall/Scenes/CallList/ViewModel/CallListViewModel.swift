@@ -22,6 +22,15 @@ final class CallListViewModel: ViewModel {
 	/// `CallListViewModel` input.
 	struct Input {
 
+		/// Emits an event when user refresh table view.
+		var refresh: Observable<Void>
+
+		// Emits an event when user press reset button.
+		var reset: Observable<Void>
+
+		// Emits an event when user select call.
+		var select: Observable<CDCall>
+
 	}
 
 	// MARK: - BehaviorRelay
@@ -54,8 +63,21 @@ final class CallListViewModel: ViewModel {
 	/// RxSwift dispose bag
 	private let disposeBag = DisposeBag()
 
-		// MARK: - Initializer
+	// MARK: - Initializer
 
+	/**
+
+	`CallListViewModel` custom initializer.
+
+	- Parameters:
+	  - provider: MoyaProvider to use to make network requests.
+		- decoder: JSONDecoder to use with provider.
+		- coordinator: Associated coordinator to manage navigation.
+		- model: Model responsible to retreive the stored data.
+
+	- Returns: Fully fledged CallListViewModel object.
+
+	*/
 	init(
 		provider: MoyaProvider<Aircall>,
 		decoder: JSONDecoder,
