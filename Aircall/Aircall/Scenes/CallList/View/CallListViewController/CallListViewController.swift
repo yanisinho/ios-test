@@ -84,7 +84,7 @@ final class CallListViewController: UITableViewController {
 
 extension CallListViewController {
 
-	/// Configure RxSwift
+	/// Configure RxSwift.
 	func setupRxSwift() {
 
 		// Setup ViewModel.Output

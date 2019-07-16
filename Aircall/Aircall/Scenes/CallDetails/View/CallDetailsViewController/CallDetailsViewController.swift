@@ -47,7 +47,19 @@ final class CallDetailsViewController: UIViewController, CallDisplayable {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		navigationItem.setRightBarButton(archiveBarButtonItem, animated: false)
+		setupRxSwift()
+	}
 
+}
+
+// MARK: - RxSwift
+
+extension CallDetailsViewController {
+
+	/// Configure RxSwift.
+	func setupRxSwift() {
+	
 	}
 
 }
