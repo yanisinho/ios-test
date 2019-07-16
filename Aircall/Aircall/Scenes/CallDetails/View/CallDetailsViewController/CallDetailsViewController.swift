@@ -80,6 +80,11 @@ extension CallDetailsViewController {
 			.drive(rx.title)
 			.disposed(by: disposeBag)
 
+		// Bind from value.
+		output.from
+			.drive(fromLabel.rx.text)
+			.disposed(by: disposeBag)
+
 	}
 
 }
