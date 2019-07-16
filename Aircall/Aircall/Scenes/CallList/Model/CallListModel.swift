@@ -6,9 +6,10 @@
 //  Copyright © 2019 Yanis SG. All rights reserved.
 //
 
-import Foundation
-import UIKit
 import CoreData
+import RxSwift
+import RxCoreData
+import RxDataSources
 
 /// This class is responsable for manipulating the persistence store.
 final class CallListModel {
@@ -75,6 +76,36 @@ extension CallListModel {
 			fatalError("AppDelegate couldn't be retreived.")
 		}
 		appDelegate.saveContext()
+	}
+
+}
+
+// MARK: - Read
+
+extension CallListModel {
+
+	/**
+
+	Retreive `CDCall` entities from persistence store.
+
+	- Parameters:
+	  - fetchRequest: `CoreData` fetch request used to retreive entities.
+
+	- Returns: An item which is made to populate an `UITableView` or `UICollectionView`.
+
+	*/
+	func calls(
+		parameter: CallListModelParameter
+		) -> Observable<[AnimatableSectionModel<String, CDCall>]> {
+		let fetchRequest: NSFetchRequest<CDCall> = CallListModelFetchRequest.requestBuilder(
+			parameter: parameter,
+			managedObjectModel: managedObjectModel
+		)
+		return managedObjectContext.rx
+			.entities(fetchRequest: fetchRequest)
+			.map {
+			return RxDataSources.animatableSections(from: $0)
+		}
 	}
 
 }
