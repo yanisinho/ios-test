@@ -7,6 +7,7 @@
 //
 
 import RxSwift
+import RxSwiftExt
 import RxCocoa
 import Moya
 import RxDataSources
@@ -18,7 +19,7 @@ final class CallListViewModel: ViewModel {
 	typealias Out = Output
 	//swiftlint:enable type_name
 
-	// MARK: - Input
+	// MARK: -
 
 	/// `CallListViewModel` input.
 	struct Input {
@@ -34,13 +35,7 @@ final class CallListViewModel: ViewModel {
 
 	}
 
-	// MARK: - BehaviorRelay
-
-	/// Emits an event when table view refreshing status changed.
-	private var isLoadingBehavior: BehaviorRelay<Bool>
-
-	/// Emits an event when table view refreshing status changed.
-	private var errorBehavior: BehaviorRelay<WSError?>
+	// MARK: -
 
 	/// `CallListViewModel` output.
 	struct Output {
@@ -64,14 +59,20 @@ final class CallListViewModel: ViewModel {
 
 	// MARK: - Properties
 
+	/// Coordinator
+	weak var coordinator: ShowCallDetails?
+
+	/// Emits an event when table view refreshing status changed.
+	private var isLoadingBehavior: BehaviorRelay<Bool>
+
+	/// Emits an event when table view refreshing status changed.
+	private var errorBehavior: BehaviorRelay<WSError?>
+
 	/// Moya provider used for web services.
 	private let provider: MoyaProvider<Aircall>
 
 	/// JSONDecoder used with web services.
 	private let decoder: JSONDecoder
-
-	/// Coordinator
-	weak var coordinator: ShowCallDetails?
 
 	/// Model coordinator
 	private let model: CallListModel
@@ -86,10 +87,10 @@ final class CallListViewModel: ViewModel {
 	`CallListViewModel` custom initializer.
 
 	- Parameters:
-	  - provider: MoyaProvider to use to make network requests.
-		- decoder: JSONDecoder to use with provider.
-		- coordinator: Associated coordinator to manage navigation.
-		- model: Model responsible to retreive the stored data.
+	- provider: MoyaProvider to use to make network requests.
+	- decoder: JSONDecoder to use with provider.
+	- coordinator: Associated coordinator to manage navigation.
+	- model: Model responsible to retreive the stored data.
 
 	- Returns: Fully fledged CallListViewModel object.
 
@@ -108,12 +109,23 @@ final class CallListViewModel: ViewModel {
 		self.isLoadingBehavior = BehaviorRelay(value: false)
 	}
 
+	// MARK: - Public methods
+
+	func update() {
+		self.getCalls()
+			.subscribe(onNext: { event in
+				self.onNext(event: event)
+			}, onError: { error in
+				self.onError(error: error)
+			}).disposed(by: disposeBag)
+	}
+
 	/**
 
 	Produce `ViewModel`'s output from `ViewModel`'s input.
 
 	- Parameters:
-	  - input: `ViewModel` input.
+	- input: `ViewModel` input.
 
 	- Returns: `ViewModel` output
 
@@ -122,7 +134,39 @@ final class CallListViewModel: ViewModel {
 		from input: CallListViewModel.Input
 		) -> CallListViewModel.Output {
 
-		return Output()
+		input.reset.flatMap({
+			self.resetCalls()
+		}).flatMap({ _ in
+			self.getCalls()
+		}).subscribe(onNext: { event in
+			self.onNext(event: event)
+		}, onError: { error in
+			self.onError(error: error)
+		}).disposed(by: disposeBag)
+
+		input.refresh.flatMap({
+			self.getCalls()
+		}).subscribe(onNext: { event in
+			self.onNext(event: event)
+		}, onError: { error in
+			self.onError(error: error)
+		}).disposed(by: disposeBag)
+
+		let data = model.calls(
+			parameter: CallListModelParameter(scope: .unarchived)
+		)
+
+		return Output(
+			dataSource: data,
+			reset: input.reset,
+			select: input.select
+				.map({call in return Int(call.id)})
+				.do(onNext: {	callId in
+					self.coordinator?.showCallDetails(with: callId)
+				}),
+			error: errorBehavior.asDriver(onErrorJustReturn: nil).unwrap(),
+			isLoading: isLoadingBehavior.asDriver()
+		)
 
 	}
 
