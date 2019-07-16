@@ -12,3 +12,22 @@ exclude:
   - "Pods/"
 copyright: '© 2019 [Aircall](https://github.com/aircall) under [open source license](https://github.com/aircall/blob/master/LICENSE).'
 theme: fullwidth
+
+custom_categories:
+
+  - name: Localization
+    children:
+      - LocalizedKey
+      - LocalizedString
+
+  - name: Components
+    children:
+      - ACTitleLabel
+      - ACSubtitleLabel
+      - ACHeaderLabel
+      - ACRefreshControl
+
+  - name: YSKit
+    children:
+      - YSLabel
+      - YSRefreshControl

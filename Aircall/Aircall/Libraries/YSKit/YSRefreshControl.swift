@@ -16,7 +16,7 @@ A standard control that can initiate the refreshing of a table view’s contents
 
 [Apple's documentation for UIRefreshControl](https://developer.apple.com/documentation/uikit/uirefreshcontrol)
 
-- note: This component can not be rendered at design time
+- note: This component can be rendered at design time
 - requires: `UIKit`
 
 */

@@ -12,7 +12,7 @@ import UIKit
 
 Label embedded inside TableViewCell header.
 
-- note: This component can not be rendered at design time
+- note: This component can be rendered at design time
 - requires: `YSKit`
 
 */
