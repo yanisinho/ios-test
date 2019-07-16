@@ -23,6 +23,8 @@
 		84B09B7D22DDE02D000ABFC1 /* CallListModel+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B7C22DDE02D000ABFC1 /* CallListModel+Method.swift */; };
 		84B09B7F22DDE15F000ABFC1 /* CallDetailsModel+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B7E22DDE15F000ABFC1 /* CallDetailsModel+Method.swift */; };
 		84B09B8122DDE3A6000ABFC1 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B8022DDE3A6000ABFC1 /* Banner.swift */; };
+		84B09B8522DDE9C1000ABFC1 /* CallListCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B8422DDE9C1000ABFC1 /* CallListCoordinatorTests.swift */; };
+		84B09B8722DDE9CD000ABFC1 /* CallDetailsCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B8622DDE9CD000ABFC1 /* CallDetailsCoordinatorTests.swift */; };
 		84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D3B22DD213700389815 /* AppDelegate.swift */; };
 		84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D4222DD213700389815 /* Aircall.xcdatamodeld */; };
 		84EF1D4622DD213800389815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1D4522DD213800389815 /* Assets.xcassets */; };
@@ -139,6 +141,8 @@
 		84B09B7C22DDE02D000ABFC1 /* CallListModel+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CallListModel+Method.swift"; sourceTree = "<group>"; };
 		84B09B7E22DDE15F000ABFC1 /* CallDetailsModel+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CallDetailsModel+Method.swift"; sourceTree = "<group>"; };
 		84B09B8022DDE3A6000ABFC1 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		84B09B8422DDE9C1000ABFC1 /* CallListCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListCoordinatorTests.swift; sourceTree = "<group>"; };
+		84B09B8622DDE9CD000ABFC1 /* CallDetailsCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDetailsCoordinatorTests.swift; sourceTree = "<group>"; };
 		84EF1D3822DD213700389815 /* Aircall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aircall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EF1D3B22DD213700389815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EF1D4322DD213700389815 /* Aircall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aircall.xcdatamodel; sourceTree = "<group>"; };
@@ -305,6 +309,46 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		84B09B8822DDE9D8000ABFC1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				84B09B8A22DDEA22000ABFC1 /* Coordinators */,
+				84B09B8B22DDEA2D000ABFC1 /* ViewControllers */,
+				84B09B8E22DDEA4C000ABFC1 /* TableViewCells */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		84B09B8922DDE9EC000ABFC1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		84B09B8A22DDEA22000ABFC1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				84B09B8422DDE9C1000ABFC1 /* CallListCoordinatorTests.swift */,
+				84B09B8622DDE9CD000ABFC1 /* CallDetailsCoordinatorTests.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		84B09B8B22DDEA2D000ABFC1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84B09B8E22DDEA4C000ABFC1 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		84EF1D2F22DD213700389815 = {
 			isa = PBXGroup;
 			children = (
@@ -346,7 +390,9 @@
 			isa = PBXGroup;
 			children = (
 				84EF1D5522DD213800389815 /* Info.plist */,
+				84B09B8822DDE9D8000ABFC1 /* Scenes */,
 				84EF1DCC22DD38C200389815 /* Network */,
+				84B09B8922DDE9EC000ABFC1 /* Data */,
 				84EF1D9722DD30D900389815 /* Theme */,
 				84EF1DE322DD3DAF00389815 /* Common */,
 			);
@@ -356,8 +402,8 @@
 		84EF1D5D22DD213800389815 /* AircallUITests */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1D5E22DD213800389815 /* AircallUITests.swift */,
 				84EF1D6022DD213800389815 /* Info.plist */,
+				84EF1D5E22DD213800389815 /* AircallUITests.swift */,
 			);
 			path = AircallUITests;
 			sourceTree = "<group>";
@@ -390,10 +436,10 @@
 		84EF1D6F22DD271700389815 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1D4522DD213800389815 /* Assets.xcassets */,
 				84EF1D8E22DD2F6400389815 /* Theme.swift */,
 				84EF1D9222DD307D00389815 /* Colors */,
 				84EF1D9322DD308E00389815 /* Components */,
+				84EF1D4522DD213800389815 /* Assets.xcassets */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -612,8 +658,8 @@
 			children = (
 				84EF1DD322DD397800389815 /* Localization */,
 				84EF1DE022DD3D7400389815 /* Extensions */,
-				84EF1DE522DD3DC300389815 /* Protocols */,
 				84EF1DE622DD3DD300389815 /* Utils */,
+				84EF1DE522DD3DC300389815 /* Protocols */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1088,7 +1134,9 @@
 				84EF1DE822DD3E0D00389815 /* ACDateTests.swift in Sources */,
 				84EF1DD522DD3A2600389815 /* LocalizedTests.swift in Sources */,
 				84EF1D8822DD2E0A00389815 /* ACSubtitleLabelTests.swift in Sources */,
+				84B09B8722DDE9CD000ABFC1 /* CallDetailsCoordinatorTests.swift in Sources */,
 				84EF1D9122DD300300389815 /* ThemeTests.swift in Sources */,
+				84B09B8522DDE9C1000ABFC1 /* CallListCoordinatorTests.swift in Sources */,
 				84EF1D7422DD28E800389815 /* ColorNameTests.swift in Sources */,
 				84EF1DDF22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift in Sources */,
 				84EF1DC722DD379000389815 /* AircallErrorTests.swift in Sources */,
