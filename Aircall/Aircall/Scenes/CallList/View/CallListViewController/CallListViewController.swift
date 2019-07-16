@@ -7,8 +7,20 @@
 //
 
 import UIKit
+import RxSwift
 
-class CallListViewController: UITableViewController {
+final class CallListViewController: UITableViewController {
+
+	// MARK: - IBOutlet
+
+	@IBOutlet var resetBarButtonItem: UIBarButtonItem!
+
+	// MARK: - Properties
+
+	/// RxSwift dispose bag.
+	private let disposeBag = DisposeBag()
+
+	// MARK: - Lifecycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
