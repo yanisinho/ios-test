@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxDataSources
+import Reusable
 
 final class CallListViewController: UITableViewController {
 
@@ -55,7 +56,17 @@ final class CallListViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+		title = Localized.title
+		definesPresentationContext = true
+		tableView.tableFooterView = UIView()
+		tableView.rowHeight = UITableView.automaticDimension
+		tableView.estimatedRowHeight = 44
+		tableView.tintColor = Color.background
+		tableView.refreshControl = ACRefreshControl()
+		tableView.register(cellType: CallListTableViewCell.self)
+		tableView.dataSource = nil
+		view.backgroundColor = Color.background
+		navigationItem.setRightBarButton(resetBarButtonItem, animated: false)
 	}
 
 	override func viewWillAppear(
