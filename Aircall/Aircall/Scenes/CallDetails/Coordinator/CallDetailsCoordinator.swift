@@ -42,6 +42,27 @@ final class CallDetailsCoordinator: Coordinator {
 	/// Start the current coordinator.
 	func start() {
 
+	// Prepare viewController.
+		let viewController = CallDetailsViewController(
+			viewModel: CallDetailsViewModel(
+				provider: provider,
+				decoder: decoder,
+				coordinator: self,
+				model: CallDetailsModel(
+					managedObjectContext: managedObjectContext,
+					managedObjectModel: managedObjectModel,
+					callId: callId
+				)
+			)
+		)
+		viewController.coordinator = self
+
+		// Push controller into navigation stack.
+		navigationController.pushViewController(
+			viewController,
+			animated: true
+		)
+
 	}
 
 	// MARK: - Initializer
