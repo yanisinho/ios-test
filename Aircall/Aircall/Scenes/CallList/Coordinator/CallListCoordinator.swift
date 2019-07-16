@@ -102,7 +102,17 @@ extension CallListCoordinator: ShowCallDetails {
 	func showCallDetails(
 		with callId: Int
 		) {
-
+		print("💚 [Navigation] CallListViewController -> CallDetailsViewController")
+		let child = CallDetailsCoordinator(
+			navigationController: navigationController,
+			managedObjectContext: managedObjectContext,
+			managedObjectModel: managedObjectModel,
+			provider: provider,
+			decoder: decoder,
+			callId: callId
+		)
+		childCoordinators.append(child)
+		child.start()
 	}
 
 }
