@@ -10,7 +10,6 @@ import UIKit
 import RxSwift
 import RxDataSources
 import Reusable
-import NotificationBannerSwift
 
 final class CallListViewController: UITableViewController {
 
@@ -113,12 +112,9 @@ extension CallListViewController {
 
 		// Display error popup if something goes wrong
 		output.error.drive(onNext: { error in
-			let banner = GrowingNotificationBanner(
-				title: error.title,
-				subtitle: error.message,
-				style: .danger
+			error.banner.notification.show(
+				bannerPosition: .bottom
 			)
-			banner.show(bannerPosition: .bottom)
 		}).disposed(by: disposeBag)
 
 		// Configure cell selection.
@@ -144,4 +140,3 @@ extension CallListViewController {
 	}
 
 }
-

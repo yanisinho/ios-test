@@ -8,7 +8,6 @@
 
 import UIKit
 import RxSwift
-import NotificationBannerSwift
 
 final class CallDetailsViewController: UIViewController, CallDisplayable {
 
@@ -106,30 +105,27 @@ extension CallDetailsViewController {
 
 		// Bind type.
 		output.type
-			.map{ UIImage(named: $0) }
+			.map { UIImage(named: $0) }
 			.drive(typeImageView.rx.image)
 			.disposed(by: disposeBag)
 
 		// Bind direction.
 		output.direction
-		.map{ UIImage(named: $0) }
+		.map { UIImage(named: $0) }
 			.drive(directionImageView.rx.image)
 			.disposed(by: disposeBag)
 
 		// Bind isArchived.
 		output.archived
-			.map{ !$0 }
+			.map { !$0 }
 			.drive(archivedImageView.rx.isHidden)
 			.disposed(by: disposeBag)
 
 		// Handle errors.
 		output.error.drive(onNext: { error in
-			let banner = GrowingNotificationBanner(
-				title: error.title,
-				subtitle: error.message,
-				style: .danger
+			error.banner.notification.show(
+				bannerPosition: .bottom
 			)
-			banner.show(bannerPosition: .bottom)
 		}).disposed(by: disposeBag)
 
 	}

@@ -78,8 +78,11 @@ extension AircallError {
 		}()
 		return WSError(
 			error: error,
-			title: title,
-			message: error.localizedDescription
+			banner: Banner(
+				title: title,
+				subtitle: error.localizedDescription,
+				style: .danger
+			)
 		)
 	}
 

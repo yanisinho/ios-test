@@ -14,10 +14,7 @@ struct WSError {
 	/// Error.
 	var error: Error
 
-	/// Error title.
-	var title: String
-
-	/// Error message.
-	var message: String
+	// Banner.
+	var banner: Banner
 
 }
