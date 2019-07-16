@@ -67,6 +67,7 @@ final class CallListViewController: UITableViewController {
 		tableView.dataSource = nil
 		view.backgroundColor = Color.background
 		navigationItem.setRightBarButton(resetBarButtonItem, animated: false)
+		setupRxSwift()
 	}
 
 	override func viewWillAppear(
@@ -74,6 +75,17 @@ final class CallListViewController: UITableViewController {
 		) {
 		super.viewWillAppear(animated)
 		viewModel.update()
+	}
+
+}
+
+// MARK: - RxSwift
+
+extension CallListViewController {
+
+	/// Configure RxSwift
+	func setupRxSwift() {
+
 	}
 
 }
