@@ -8,23 +8,24 @@
 
 import UIKit
 
-class CallDetailsViewController: UIViewController {
+final class CallDetailsViewController: UIViewController, CallDisplayable {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	// MARK: - IBOutlet
 
-        // Do any additional setup after loading the view.
-    }
+	@IBOutlet weak var archiveBarButtonItem: UIBarButtonItem!
+	@IBOutlet weak var directionImageView: UIImageView!
+	@IBOutlet weak var archivedImageView: UIImageView!
 
+	// MARK: CallDisplayable
 
-    /*
-    // MARK: - Navigation
+	@IBOutlet weak var typeImageView: UIImageView!
+	@IBOutlet weak var fromLabel: ACTitleLabel!
+	@IBOutlet weak var toLabel: ACSubtitleLabel!
+	@IBOutlet weak var createAtLabel: ACSubtitleLabel!
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+	}
 
 }

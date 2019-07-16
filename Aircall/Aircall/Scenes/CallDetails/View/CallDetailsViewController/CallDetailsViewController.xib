@@ -1,22 +1,131 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallDetailsViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallDetailsViewController" customModule="Aircall" customModuleProvider="target">
             <connections>
+                <outlet property="archiveBarButtonItem" destination="8gg-Ek-4Ur" id="Ucg-aw-bDt"/>
+                <outlet property="archivedImageView" destination="QLY-eF-rfY" id="NZj-zN-pcc"/>
+                <outlet property="createAtLabel" destination="Igu-iS-4fw" id="vDn-Np-QPY"/>
+                <outlet property="directionImageView" destination="NpE-YR-VNj" id="sA0-xM-3Ye"/>
+                <outlet property="fromLabel" destination="Lcz-QC-BJt" id="v0H-hg-fwf"/>
+                <outlet property="toLabel" destination="UeD-v8-qdR" id="t9H-gA-UwM"/>
+                <outlet property="typeImageView" destination="Cfy-4g-hqk" id="sLV-ni-zWw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
+        <barButtonItem systemItem="organize" id="8gg-Ek-4Ur" userLabel="archiveBarButtonItem_UIBarButtonItem"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLy-0L-iUV" userLabel="Caller_UIView">
+                    <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="BTB-DC-8hq" userLabel="callerImageView_UIImageView">
+                            <rect key="frame" x="20" y="20" width="132" height="132"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="132" id="WHe-aa-suO"/>
+                                <constraint firstAttribute="height" constant="132" id="u3R-oW-wc8"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archived" translatesAutoresizingMaskIntoConstraints="NO" id="QLY-eF-rfY" userLabel="archivedImageView_UIImageView">
+                            <rect key="frame" x="20" y="20" width="132" height="132"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inbound" translatesAutoresizingMaskIntoConstraints="NO" id="NpE-YR-VNj" userLabel="directionImageView_UIImageView">
+                            <rect key="frame" x="354" y="66" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="d8F-zw-YiL"/>
+                                <constraint firstAttribute="width" constant="40" id="ot5-8k-7lF"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.064796485006809235" green="0.56047636270523071" blue="0.73145991563796997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="BTB-DC-8hq" firstAttribute="leading" secondItem="wLy-0L-iUV" secondAttribute="leading" constant="20" id="1Lt-pv-XwQ"/>
+                        <constraint firstItem="QLY-eF-rfY" firstAttribute="trailing" secondItem="BTB-DC-8hq" secondAttribute="trailing" id="80a-yS-0Zn"/>
+                        <constraint firstItem="NpE-YR-VNj" firstAttribute="centerY" secondItem="BTB-DC-8hq" secondAttribute="centerY" id="PmV-dp-y6z"/>
+                        <constraint firstItem="QLY-eF-rfY" firstAttribute="top" secondItem="BTB-DC-8hq" secondAttribute="top" id="RPQ-kY-V2L"/>
+                        <constraint firstItem="QLY-eF-rfY" firstAttribute="leading" secondItem="BTB-DC-8hq" secondAttribute="leading" id="a5t-wB-j1U"/>
+                        <constraint firstAttribute="height" constant="200" id="d9Y-f5-tXd"/>
+                        <constraint firstItem="BTB-DC-8hq" firstAttribute="top" secondItem="wLy-0L-iUV" secondAttribute="top" constant="20" id="fcY-px-3yk"/>
+                        <constraint firstItem="QLY-eF-rfY" firstAttribute="bottom" secondItem="BTB-DC-8hq" secondAttribute="bottom" id="meu-6u-prG"/>
+                        <constraint firstAttribute="trailing" secondItem="NpE-YR-VNj" secondAttribute="trailing" constant="20" id="tAS-hp-IH4"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9D6-8N-L1x" userLabel="Call_UIView">
+                    <rect key="frame" x="20" y="263" width="374" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="missed" translatesAutoresizingMaskIntoConstraints="NO" id="Cfy-4g-hqk" userLabel="typeImageView_UIImageView">
+                            <rect key="frame" x="8" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Yme-hk-z2t"/>
+                                <constraint firstAttribute="height" constant="30" id="sGs-aW-jhk"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Pierre-Baptiste Béchu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcz-QC-BJt" userLabel="fromLabel_ACTitleLabel" customClass="ACTitleLabel" customModule="Aircall" customModuleProvider="target">
+                            <rect key="frame" x="46" y="8" width="264.5" height="20.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Jonathan Anguelov" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeD-v8-qdR" userLabel="toLabel_ACSubtitleLabel" customClass="ACSubtitleLabel" customModule="Aircall" customModuleProvider="target">
+                            <rect key="frame" x="46" y="28.5" width="264.5" height="17.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="12:18 PM" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igu-iS-4fw" userLabel="createdAt_ACSubtitleLabel" customClass="ACSubtitleLabel" customModule="Aircall" customModuleProvider="target">
+                            <rect key="frame" x="318.5" y="18.5" width="47.5" height="13.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="UeD-v8-qdR" secondAttribute="bottom" constant="4" id="8Po-gG-mIf"/>
+                        <constraint firstAttribute="height" constant="50" id="F5j-85-OJE"/>
+                        <constraint firstItem="Lcz-QC-BJt" firstAttribute="top" secondItem="9D6-8N-L1x" secondAttribute="top" constant="8" id="Trk-8m-0ze"/>
+                        <constraint firstItem="Cfy-4g-hqk" firstAttribute="leading" secondItem="9D6-8N-L1x" secondAttribute="leading" constant="8" id="cAz-qm-oyP"/>
+                        <constraint firstItem="UeD-v8-qdR" firstAttribute="leading" secondItem="Cfy-4g-hqk" secondAttribute="trailing" constant="8" id="coY-Uq-vN6"/>
+                        <constraint firstItem="Igu-iS-4fw" firstAttribute="leading" secondItem="Lcz-QC-BJt" secondAttribute="trailing" constant="8" id="f6L-Ay-Vgo"/>
+                        <constraint firstItem="Lcz-QC-BJt" firstAttribute="leading" secondItem="Cfy-4g-hqk" secondAttribute="trailing" constant="8" id="gaM-uL-6QB"/>
+                        <constraint firstItem="Cfy-4g-hqk" firstAttribute="centerY" secondItem="9D6-8N-L1x" secondAttribute="centerY" id="kS3-lf-Ehq"/>
+                        <constraint firstAttribute="trailing" secondItem="Igu-iS-4fw" secondAttribute="trailing" constant="8" id="lBP-ku-HbL"/>
+                        <constraint firstItem="Igu-iS-4fw" firstAttribute="centerY" secondItem="9D6-8N-L1x" secondAttribute="centerY" id="sFI-4u-wFj"/>
+                        <constraint firstItem="Igu-iS-4fw" firstAttribute="leading" secondItem="UeD-v8-qdR" secondAttribute="trailing" constant="8" id="skg-nQ-37A"/>
+                        <constraint firstItem="UeD-v8-qdR" firstAttribute="top" secondItem="Lcz-QC-BJt" secondAttribute="bottom" id="xYl-cW-FFT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9D6-8N-L1x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7wS-rS-U2m"/>
+                <constraint firstItem="wLy-0L-iUV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LVf-8B-MIt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9D6-8N-L1x" secondAttribute="trailing" constant="20" id="UYf-uI-uUe"/>
+                <constraint firstItem="wLy-0L-iUV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aU9-hX-huB"/>
+                <constraint firstItem="wLy-0L-iUV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gr2-jx-uqw"/>
+                <constraint firstItem="9D6-8N-L1x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="175" id="owJ-Yv-Ksk"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
         </view>
     </objects>
+    <resources>
+        <image name="archived" width="100" height="100"/>
+        <image name="inbound" width="24" height="24"/>
+        <image name="missed" width="24" height="24"/>
+        <image name="user" width="132" height="132"/>
+    </resources>
 </document>
