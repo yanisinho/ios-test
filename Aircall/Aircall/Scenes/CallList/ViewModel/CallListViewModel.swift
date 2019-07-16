@@ -9,6 +9,7 @@
 import RxSwift
 import RxCocoa
 import Moya
+import RxDataSources
 
 final class CallListViewModel: ViewModel {
 
@@ -43,6 +44,21 @@ final class CallListViewModel: ViewModel {
 
 	/// `CallListViewModel` output.
 	struct Output {
+
+		/// Observable exposing activities retreived from core data and ordered by section.
+		var dataSource: Observable<[AnimatableSectionModel<String, CDCall>]>
+
+		/// `Observable<Void>` exposing cancel action.
+		var reset: Observable<Void>
+
+		/// `Observable<CDCall>` exposing select action.
+		var select: Observable<Int>
+
+		/// `Driver<WSError>` exposing error.
+		var error: Driver<WSError>
+
+		/// `Driver<WSError>` exposing loading status.
+		var isLoading: Driver<Bool>
 
 	}
 
@@ -154,6 +170,48 @@ extension CallListViewModel {
 			.asObservable()
 			.mapBusiness(payload: WSReset.self, using: decoder)
 			.materialize()
+	}
+
+}
+
+// MARK: - Side effects
+
+extension CallListViewModel {
+
+	/**
+
+	Side effects when an event is emitted.
+
+	- Parameters:
+	  - event: The event to use.
+
+	*/
+	private func onNext(
+		event: Event<WSCalls>
+		) {
+		switch event {
+		case .next(let content):
+			model.save(calls: content.calls)
+		case .error(let error):
+			errorBehavior.accept(AircallError.payload(from: error))
+		case .completed:
+			break
+		}
+		isLoadingBehavior.accept(false)
+	}
+
+	/**
+
+	Side effects when an error is emitted.
+
+	- Parameters:
+	  - event: The event to use.
+
+	*/
+	private func onError(
+		error: Error
+		) {
+		errorBehavior.accept(AircallError.payload(from: error))
 	}
 
 }

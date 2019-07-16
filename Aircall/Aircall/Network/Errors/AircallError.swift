@@ -45,3 +45,42 @@ extension AircallError {
 	}
 
 }
+
+extension AircallError {
+
+	/**
+
+	Build `WSError` payload from generic Error.
+
+	- Parameters:
+	  - error: The error to analyse.
+
+	- Returns: `WSError` ready to be used.
+
+	*/
+	static func payload(from error: Error) -> WSError {
+		let title: String = {
+			if let error = error as? MoyaError {
+				switch error {
+				case .objectMapping:
+					return Localized.mappingError
+				case .underlying:
+					return Localized.networkError
+				case .statusCode:
+					return Localized.serverError
+				default:
+					return Localized.unknownError
+				}
+			} else if error is AircallError {
+				return Localized.businessError
+			}
+			return Localized.unknownError
+		}()
+		return WSError(
+			error: error,
+			title: title,
+			message: error.localizedDescription
+		)
+	}
+
+}
