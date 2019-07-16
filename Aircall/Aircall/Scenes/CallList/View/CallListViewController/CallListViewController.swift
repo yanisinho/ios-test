@@ -25,7 +25,10 @@ final class CallListViewController: UITableViewController {
 	/// RxSwift dispose bag.
 	private let disposeBag = DisposeBag()
 
+	/// Convenience typealias describing dataSource.
 	typealias CallOrdered = RxTableViewSectionedAnimatedDataSource<AnimatableSectionModel<String, CDCall>>
+
+	/// Configure tableViewCells from dataSource.
 	var dataSource = CallOrdered(configureCell: { _, tableView, indexPath, call in
 		let cell: CallListTableViewCell = tableView.dequeueReusableCell(for: indexPath)
 		Configurator.update(cell, with: call)
