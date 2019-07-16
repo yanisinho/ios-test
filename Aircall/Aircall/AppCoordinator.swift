@@ -103,6 +103,8 @@ extension AppCoordinator: UINavigationControllerDelegate {
 		switch viewController {
 		case is CallListViewController:
 			print("CallListViewController")
+		case is CallDetailsViewController:
+			print("CallDetailsViewController")
 		default:
 			print("Unknown view controller")
 		}
@@ -129,6 +131,10 @@ extension AppCoordinator: UINavigationControllerDelegate {
 		}
 		if navigationController.viewControllers.contains(fromViewController) {
 			return
+		}
+		if let activityDetailsViewController = fromViewController as? CallDetailsViewController {
+			print("didShow CallDetailsViewController finished")
+			childDidFinish(activityDetailsViewController.coordinator)
 		}
 	}
 
