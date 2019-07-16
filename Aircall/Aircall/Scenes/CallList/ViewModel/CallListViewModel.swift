@@ -111,7 +111,8 @@ final class CallListViewModel: ViewModel {
 
 	// MARK: - Public methods
 
-	func update() {
+	/// Reload web service on viewWillAppear.
+	func reload() {
 		self.getCalls()
 			.subscribe(onNext: { event in
 				self.onNext(event: event)

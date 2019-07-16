@@ -133,7 +133,7 @@ final class CallDetailsViewModel: ViewModel {
 	}
 
 	/// Retreive `CDCall` from persistence store.
-	func defaut() {
+	func retreive() {
 		let parameter = CallDetailsModel.Parameter(callId: model.callId)
 		model
 			.read(parameter: parameter)
@@ -156,8 +156,8 @@ final class CallDetailsViewModel: ViewModel {
 
 	}
 
-	/// Retreive `CDCall` from web service
-	func update() {
+	/// Reload web service.
+	func reload() {
 		self.getCall(id: self.model.callId)
 			.subscribe(onNext: { event in
 				self.onNext(event: event)

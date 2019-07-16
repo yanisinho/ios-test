@@ -55,8 +55,8 @@ final class CallDetailsViewController: UIViewController, CallDisplayable {
 		_ animated: Bool
 		) {
 		super.viewWillAppear(animated)
-		viewModel.defaut()
-		viewModel.update()
+		viewModel.retreive()
+		viewModel.reload()
 	}
 
 }

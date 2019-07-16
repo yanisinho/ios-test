@@ -77,7 +77,7 @@ final class CallListViewController: UITableViewController {
 		_ animated: Bool
 		) {
 		super.viewWillAppear(animated)
-		viewModel.update()
+		viewModel.reload()
 	}
 
 }
@@ -114,11 +114,12 @@ extension CallListViewController {
 		}
 
 		// Display error popup if something goes wrong
-		output.error.drive(onNext: { error in
-			error.banner.notification.show(
-				bannerPosition: .bottom
-			)
-		}).disposed(by: disposeBag)
+		output.error
+			.drive(onNext: { error in
+				error.banner.notification.show(
+					bannerPosition: .bottom
+				)
+			}).disposed(by: disposeBag)
 
 		// Configure cell selection.
 		output.select
