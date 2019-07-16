@@ -121,6 +121,16 @@ extension CallDetailsViewController {
 			.drive(archivedImageView.rx.isHidden)
 			.disposed(by: disposeBag)
 
+		// Handle errors.
+		output.error.drive(onNext: { error in
+			let banner = GrowingNotificationBanner(
+				title: error.title,
+				subtitle: error.message,
+				style: .danger
+			)
+			banner.show(bannerPosition: .bottom)
+		}).disposed(by: disposeBag)
+
 	}
 
 }
