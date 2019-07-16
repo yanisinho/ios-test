@@ -271,6 +271,14 @@
 			path = CallDetailsViewController;
 			sourceTree = "<group>";
 		};
+		8479854A22DDB08400042A11 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D4722DD213800389815 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		84EF1D2F22DD213700389815 = {
 			isa = PBXGroup;
 			children = (
@@ -347,7 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				84EF1D3F22DD213700389815 /* Main.storyboard */,
-				84EF1D4722DD213800389815 /* LaunchScreen.storyboard */,
+				8479854A22DDB08400042A11 /* LaunchScreen */,
 				84EF1D3D22DD213700389815 /* ViewController.swift */,
 				84EF1E1622DD468D00389815 /* CallList */,
 				84EF1E1722DD469100389815 /* CallDetails */,
