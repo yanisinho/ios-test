@@ -136,7 +136,7 @@ final class CallDetailsViewModel: ViewModel {
 	func defaut() {
 		let parameter = CallDetailsModel.Parameter(callId: model.callId)
 		model
-			.calls(parameter: parameter)
+			.read(parameter: parameter)
 			.unwrap()
 			.map { call in
 				return WSCall(

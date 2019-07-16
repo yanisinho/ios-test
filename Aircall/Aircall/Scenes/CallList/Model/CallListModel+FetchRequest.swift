@@ -24,7 +24,7 @@ extension CallListModel {
 		- Returns: Fetch request ready to be used.
 		
 		*/
-		static func requestBuilder(
+		static func build(
 			parameter: CallListModel.Parameter,
 			managedObjectModel: NSManagedObjectModel
 			) -> NSFetchRequest<CDCall> {

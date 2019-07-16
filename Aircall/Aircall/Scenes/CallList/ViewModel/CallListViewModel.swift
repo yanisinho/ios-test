@@ -152,7 +152,7 @@ final class CallListViewModel: ViewModel {
 			self.onError(error: error)
 		}).disposed(by: disposeBag)
 
-		let data = model.calls(
+		let data = model.read(
 			parameter: CallListModel.Parameter(scope: .unarchived)
 		)
 

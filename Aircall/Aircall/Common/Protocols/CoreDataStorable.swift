@@ -1,5 +1,5 @@
 //
-//  CallListModel.swift
+//  CoreDataStorable.swift
 //  Aircall
 //
 //  Created by Yanis SIDAHMED on 16/07/2019.
@@ -8,14 +8,13 @@
 
 import CoreData
 
-/// This class is responsable for manipulating the persistence store.
-final class CallListModel: CoreDataStorable {
+protocol CoreDataStorable {
 
 	/// `CoreData` managed object context.
-	internal var managedObjectContext: NSManagedObjectContext
+	var managedObjectContext: NSManagedObjectContext { get set }
 
 	/// `CoreData` managed object model.
-	internal var managedObjectModel: NSManagedObjectModel
+	var managedObjectModel: NSManagedObjectModel { get set }
 
 	/**
 
@@ -31,10 +30,6 @@ final class CallListModel: CoreDataStorable {
 	init(
 		managedObjectContext: NSManagedObjectContext,
 		managedObjectModel: NSManagedObjectModel
-		) {
-		self.managedObjectContext = managedObjectContext
-		self.managedObjectModel = managedObjectModel
-	}
+	)
 
 }
-

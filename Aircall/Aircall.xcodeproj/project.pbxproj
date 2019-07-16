@@ -19,6 +19,9 @@
 		8479855822DDCC9E00042A11 /* CallDetailsModel+FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479855722DDCC9E00042A11 /* CallDetailsModel+FetchRequest.swift */; };
 		8479855B22DDD47D00042A11 /* CallDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479855922DDD47D00042A11 /* CallDetailsViewController.swift */; };
 		8479855C22DDD47D00042A11 /* CallDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479855A22DDD47D00042A11 /* CallDetailsViewController.xib */; };
+		8479855E22DDDD3300042A11 /* CoreDataStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479855D22DDDD3300042A11 /* CoreDataStorable.swift */; };
+		84B09B7D22DDE02D000ABFC1 /* CallListModel+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B7C22DDE02D000ABFC1 /* CallListModel+Method.swift */; };
+		84B09B7F22DDE15F000ABFC1 /* CallDetailsModel+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B09B7E22DDE15F000ABFC1 /* CallDetailsModel+Method.swift */; };
 		84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D3B22DD213700389815 /* AppDelegate.swift */; };
 		84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D4222DD213700389815 /* Aircall.xcdatamodeld */; };
 		84EF1D4622DD213800389815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1D4522DD213800389815 /* Assets.xcassets */; };
@@ -131,6 +134,9 @@
 		8479855722DDCC9E00042A11 /* CallDetailsModel+FetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CallDetailsModel+FetchRequest.swift"; sourceTree = "<group>"; };
 		8479855922DDD47D00042A11 /* CallDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDetailsViewController.swift; sourceTree = "<group>"; };
 		8479855A22DDD47D00042A11 /* CallDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallDetailsViewController.xib; sourceTree = "<group>"; };
+		8479855D22DDDD3300042A11 /* CoreDataStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorable.swift; sourceTree = "<group>"; };
+		84B09B7C22DDE02D000ABFC1 /* CallListModel+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CallListModel+Method.swift"; sourceTree = "<group>"; };
+		84B09B7E22DDE15F000ABFC1 /* CallDetailsModel+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CallDetailsModel+Method.swift"; sourceTree = "<group>"; };
 		84EF1D3822DD213700389815 /* Aircall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aircall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EF1D3B22DD213700389815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EF1D4322DD213700389815 /* Aircall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aircall.xcdatamodel; sourceTree = "<group>"; };
@@ -619,6 +625,7 @@
 				84EF1E0222DD453700389815 /* ViewModel.swift */,
 				84EF1E0422DD456900389815 /* Coordinator.swift */,
 				8479854F22DDB64500042A11 /* ShowCallDetails.swift */,
+				8479855D22DDDD3300042A11 /* CoreDataStorable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -669,6 +676,7 @@
 			isa = PBXGroup;
 			children = (
 				84EF1E0822DD464100389815 /* CallListModel.swift */,
+				84B09B7C22DDE02D000ABFC1 /* CallListModel+Method.swift */,
 				8479855122DDB92600042A11 /* CallListModel+Parameter.swift */,
 				8479855322DDB98900042A11 /* CallListModel+FetchRequest.swift */,
 			);
@@ -703,6 +711,7 @@
 			isa = PBXGroup;
 			children = (
 				84EF1E1022DD466E00389815 /* CallDetailsModel.swift */,
+				84B09B7E22DDE15F000ABFC1 /* CallDetailsModel+Method.swift */,
 				8479855522DDCC0800042A11 /* CallDetailsModel+Parameter.swift */,
 				8479855722DDCC9E00042A11 /* CallDetailsModel+FetchRequest.swift */,
 			);
@@ -1018,6 +1027,7 @@
 				84EF1DFF22DD443800389815 /* Configurator.swift in Sources */,
 				84EF1DFB22DD42D700389815 /* RxDataSources.swift in Sources */,
 				84EF1DDB22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift in Sources */,
+				84B09B7D22DDE02D000ABFC1 /* CallListModel+Method.swift in Sources */,
 				84EF1DF722DD429500389815 /* CDCall+Sortable.swift in Sources */,
 				84EF1D7A22DD2BFE00389815 /* YSLabel.swift in Sources */,
 				84EF1DAB22DD33A900389815 /* WSCalls.swift in Sources */,
@@ -1057,7 +1067,9 @@
 				84EF1DBD22DD34AF00389815 /* CallRepresentable.swift in Sources */,
 				84EF1D9D22DD317200389815 /* Aircall.swift in Sources */,
 				84EF1D8F22DD2F6400389815 /* Theme.swift in Sources */,
+				84B09B7F22DDE15F000ABFC1 /* CallDetailsModel+Method.swift in Sources */,
 				84EF1DB722DD342B00389815 /* CallType.swift in Sources */,
+				8479855E22DDDD3300042A11 /* CoreDataStorable.swift in Sources */,
 				84EF1D8022DD2C7F00389815 /* ACSubtitleLabel.swift in Sources */,
 				84EF1D7C22DD2C1200389815 /* YSRefreshControl.swift in Sources */,
 				84EF1E0D22DD465400389815 /* CallListViewModel.swift in Sources */,
