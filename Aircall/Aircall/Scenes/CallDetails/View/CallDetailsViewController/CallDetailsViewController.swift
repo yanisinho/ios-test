@@ -67,7 +67,14 @@ extension CallDetailsViewController {
 
 	/// Configure RxSwift.
 	func setupRxSwift() {
-	
+
+		// Retreive view model output.
+		let output = viewModel.setup(from:
+			CallDetailsViewModel.Input(
+				archive: archiveBarButtonItem.rx.tap.asObservable()
+			)
+		)
+
 	}
 
 }
