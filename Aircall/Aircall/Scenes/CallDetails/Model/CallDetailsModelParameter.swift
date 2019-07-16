@@ -1,5 +1,5 @@
 //
-//  CallDetailsParameter.swift
+//  CallDetailsModelParameter.swift
 //  Aircall
 //
 //  Created by Yanis SIDAHMED on 16/07/2019.
