@@ -103,6 +103,11 @@ extension CallDetailsViewController {
 			.drive(createAtLabel.rx.text)
 			.disposed(by: disposeBag)
 
+		// Bind type.
+		output.type.map{ UIImage(named: $0) }
+			.drive(typeImageView.rx.image)
+			.disposed(by: disposeBag)
+
 	}
 
 }
