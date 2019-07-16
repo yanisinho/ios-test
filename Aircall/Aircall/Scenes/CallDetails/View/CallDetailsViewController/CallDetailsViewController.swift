@@ -75,6 +75,11 @@ extension CallDetailsViewController {
 			)
 		)
 
+		// Bind title.
+		output.title
+			.drive(rx.title)
+			.disposed(by: disposeBag)
+
 	}
 
 }
