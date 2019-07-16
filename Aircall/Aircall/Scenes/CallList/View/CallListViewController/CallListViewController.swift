@@ -95,6 +95,11 @@ extension CallListViewController {
 			)
 		)
 
+		// Bind data source with table view.
+		output.dataSource
+			.bind(to: tableView.rx.items(dataSource: dataSource))
+			.disposed(by: disposeBag)
+
 	}
 
 }
