@@ -132,6 +132,40 @@ final class CallDetailsViewModel: ViewModel {
 
 	}
 
+	/// Retreive `CDCall` from persistence store.
+	func defaut() {
+		let parameter = CallDetailsModelParameter(callId: model.callId)
+		model
+			.calls(parameter: parameter)
+			.unwrap()
+			.map { call in
+				return WSCall(
+					id: Int(call.id),
+					from: call.from,
+					to: call.to,
+					via: call.via,
+					isArchived: call.isArchived,
+					duration: Int(call.id),
+					created: call.created as Date,
+					callType: CallType(rawValue: call.type) ?? .unknown,
+					callDirection: CallDirection(rawValue: call.direction) ?? .unknown
+				)
+			}.subscribe(onNext: { call in
+				self.successBehavior.accept(call)
+			}).disposed(by: disposeBag)
+
+	}
+
+	/// Retreive `CDCall` from web service
+	func update() {
+		self.getCall(id: self.model.callId)
+			.subscribe(onNext: { event in
+				self.onNext(event: event)
+			}, onError: { error in
+				self.onError(error: error)
+			}).disposed(by: disposeBag)
+	}
+
 }
 
 // MARK: - Network
