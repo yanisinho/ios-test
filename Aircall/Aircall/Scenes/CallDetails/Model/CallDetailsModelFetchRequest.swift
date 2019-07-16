@@ -27,7 +27,7 @@ struct CallDetailsModelFetchRequest {
 		let predicates: [NSPredicate] = [
 			fetchRequest.predicate,
 			NSPredicate(format: "id = %i", parameter.callId)
-			].compactMap{$0}
+			].compactMap {$0}
 		fetchRequest.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicates)
 
 		return fetchRequest

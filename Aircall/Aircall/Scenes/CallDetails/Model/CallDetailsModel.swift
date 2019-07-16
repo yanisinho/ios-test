@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import CoreData
+import RxSwift
 
 /// This class is responsable for manipulating the persistence store.
 struct CallDetailsModel {
@@ -82,3 +83,32 @@ extension CallDetailsModel {
 	}
 
 }
+
+// MARK: - Read
+
+extension CallDetailsModel {
+
+	/**
+
+	Retreive `CDCall` entity from persistence store.
+
+	- Parameters:
+	  - fetchRequest: `CoreData` fetch request used to retreive entities.
+
+	- Returns: An item which is made to populate an `UITableView` or `UICollectionView`.
+
+	*/
+	func calls(
+		parameter: CallDetailsModelParameter
+		) -> Observable<CDCall?> {
+		let fetchRequest: NSFetchRequest<CDCall> = CallDetailsModelFetchRequest.requestBuilder(
+			parameter: parameter,
+			managedObjectModel: managedObjectModel
+		)
+		return managedObjectContext.rx
+			.entities(fetchRequest: fetchRequest)
+			.map{$0.first}
+	}
+
+}
+
