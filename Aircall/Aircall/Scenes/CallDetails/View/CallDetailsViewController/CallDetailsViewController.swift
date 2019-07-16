@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 final class CallDetailsViewController: UIViewController, CallDisplayable {
 
@@ -22,6 +23,27 @@ final class CallDetailsViewController: UIViewController, CallDisplayable {
 	@IBOutlet weak var fromLabel: ACTitleLabel!
 	@IBOutlet weak var toLabel: ACSubtitleLabel!
 	@IBOutlet weak var createAtLabel: ACSubtitleLabel!
+
+	// MARK: - Properties
+	weak var coordinator: CallDetailsCoordinator?
+	private let viewModel: CallDetailsViewModel
+	private let disposeBag = DisposeBag()
+
+	// MARK: - Initialization
+
+	init(viewModel: CallDetailsViewModel) {
+		self.viewModel = viewModel
+		super.init(
+			nibName: "CallDetailsViewController",
+			bundle: nil
+		)
+	}
+
+	required init?(coder aDecoder: NSCoder) {
+		fatalError("init(coder:) is not supported")
+	}
+
+	// MARK: - Lifecycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
