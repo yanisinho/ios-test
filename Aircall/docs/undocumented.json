@@ -78,13 +78,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Localization/LocalizedKey.swift",
-      "line": 11,
-      "symbol": "LocalizedKey",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Protocols/CallRepresentable.swift",
       "line": 13,
       "symbol": "CallRepresentable",
@@ -229,6 +222,13 @@
       "line": 16,
       "symbol": "CDCall.Identity",
       "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Libraries/YSKit/YSRefreshControl.swift",
+      "line": 35,
+      "symbol": "YSRefreshControl.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -593,48 +593,6 @@
       "line": 182,
       "symbol": "CallListViewModel.ResetEvent",
       "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Theme/Components/Labels/ACHeaderLabel.swift",
-      "line": 11,
-      "symbol": "ACHeaderLabel",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Theme/Components/Labels/ACHeaderLabel.swift",
-      "line": 17,
-      "symbol": "ACHeaderLabel.init(title:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Theme/Components/Labels/ACSubtitleLabel.swift",
-      "line": 11,
-      "symbol": "ACSubtitleLabel",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Theme/Components/Labels/ACTitleLabel.swift",
-      "line": 11,
-      "symbol": "ACTitleLabel",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Theme/Components/RefreshControls/ACRefreshControl.swift",
-      "line": 11,
-      "symbol": "ACRefreshControl",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Theme/Components/YSKit/YSRefreshControl.swift",
-      "line": 44,
-      "symbol": "YSRefreshControl.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {

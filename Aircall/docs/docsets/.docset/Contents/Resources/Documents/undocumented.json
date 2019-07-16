@@ -1,0 +1,614 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppCoordinator.swift",
+      "line": 62,
+      "symbol": "AppCoordinator.init(navigationController:managedObjectContext:managedObjectModel:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppCoordinator.swift",
+      "line": 72,
+      "symbol": "AppCoordinator.childDidFinish(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppDelegate.swift",
+      "line": 13,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppDelegate.swift",
+      "line": 25,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppDelegate.swift",
+      "line": 65,
+      "symbol": "AppDelegate.applicationWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppDelegate.swift",
+      "line": 69,
+      "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppDelegate.swift",
+      "line": 73,
+      "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppDelegate.swift",
+      "line": 77,
+      "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppDelegate.swift",
+      "line": 81,
+      "symbol": "AppDelegate.applicationWillTerminate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppDelegate.swift",
+      "line": 87,
+      "symbol": "AppDelegate.persistentContainer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/AppDelegate.swift",
+      "line": 119,
+      "symbol": "AppDelegate.saveContext()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Localization/LocalizedKey.swift",
+      "line": 11,
+      "symbol": "LocalizedKey",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Protocols/CallRepresentable.swift",
+      "line": 13,
+      "symbol": "CallRepresentable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Protocols/CoreDataStorable.swift",
+      "line": 11,
+      "symbol": "CoreDataStorable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Protocols/Sortable.swift",
+      "line": 11,
+      "symbol": "Sortable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Protocols/ViewModel.swift",
+      "line": 20,
+      "symbol": "ViewModel",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Common/Utils/RxDataSources.swift",
+      "line": 12,
+      "symbol": "RxDataSources",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
+      "line": null,
+      "symbol": "CDCall",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
+      "line": null,
+      "symbol": "CDCall",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
+      "line": null,
+      "symbol": "CDCall",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
+      "line": null,
+      "symbol": "CDCall",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
+      "line": null,
+      "symbol": "CDCall",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataClass.swift",
+      "line": 13,
+      "symbol": "CDCall",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
+      "line": 15,
+      "symbol": "CDCall.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
+      "line": 19,
+      "symbol": "CDCall.created",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "CDCall.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "CDCall.direction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "CDCall.via",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
+      "line": 25,
+      "symbol": "CDCall.isArchived",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
+      "line": 27,
+      "symbol": "CDCall.duration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
+      "line": 35,
+      "symbol": "CDCall.dateShort",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+CoreDataProperties.swift",
+      "line": 39,
+      "symbol": "CDCall.dayString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Data/CDCall+IdentifiableType.swift",
+      "line": 16,
+      "symbol": "CDCall.Identity",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Libraries/YSKit/YSRefreshControl.swift",
+      "line": 33,
+      "symbol": "YSRefreshControl.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 20,
+      "symbol": "WSCall",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 93,
+      "symbol": "WSCall.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 94,
+      "symbol": "WSCall.CodingKeys.from",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 95,
+      "symbol": "WSCall.CodingKeys.to",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 96,
+      "symbol": "WSCall.CodingKeys.via",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 97,
+      "symbol": "WSCall.CodingKeys.isArchived",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 98,
+      "symbol": "WSCall.CodingKeys.duration",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 99,
+      "symbol": "WSCall.CodingKeys.created",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 100,
+      "symbol": "WSCall.CodingKeys.callDirection",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSCall.swift",
+      "line": 101,
+      "symbol": "WSCall.CodingKeys.callType",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSError.swift",
+      "line": 18,
+      "symbol": "WSError.banner",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSResponse.swift",
+      "line": 25,
+      "symbol": "WSResponse.CodingKeys.response",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSResponse.swift",
+      "line": 26,
+      "symbol": "WSResponse.CodingKeys.status",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSResponse.swift",
+      "line": 27,
+      "symbol": "WSResponse.CodingKeys.code",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Network/Payloads/WSResponse.swift",
+      "line": 28,
+      "symbol": "WSResponse.CodingKeys.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/Coordinator/CallDetailsCoordinator.swift",
+      "line": 12,
+      "symbol": "CallDetailsCoordinator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/Model/CallDetailsModel+FetchRequest.swift",
+      "line": 13,
+      "symbol": "CallDetailsModel.FetchRequest",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": null,
+      "symbol": "CallDetailsViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 12,
+      "symbol": "CallDetailsViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 16,
+      "symbol": "CallDetailsViewController.archiveBarButtonItem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 17,
+      "symbol": "CallDetailsViewController.directionImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 18,
+      "symbol": "CallDetailsViewController.archivedImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 28,
+      "symbol": "CallDetailsViewController.coordinator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 29,
+      "symbol": "CallDetailsViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 30,
+      "symbol": "CallDetailsViewController.disposeBag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 34,
+      "symbol": "CallDetailsViewController.init(viewModel:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 42,
+      "symbol": "CallDetailsViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 48,
+      "symbol": "CallDetailsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/View/CallDetailsViewController/CallDetailsViewController.swift",
+      "line": 54,
+      "symbol": "CallDetailsViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/ViewModel/CallDetailsViewModel.swift",
+      "line": null,
+      "symbol": "CallDetailsViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/ViewModel/CallDetailsViewModel.swift",
+      "line": null,
+      "symbol": "CallDetailsViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/ViewModel/CallDetailsViewModel.swift",
+      "line": 15,
+      "symbol": "CallDetailsViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/ViewModel/CallDetailsViewModel.swift",
+      "line": 26,
+      "symbol": "CallDetailsViewModel.Input.archive",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallDetails/ViewModel/CallDetailsViewModel.swift",
+      "line": 84,
+      "symbol": "CallDetailsViewModel.init(provider:decoder:coordinator:model:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/Coordinator/CallListCoordinator.swift",
+      "line": null,
+      "symbol": "CallListCoordinator",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/Coordinator/CallListCoordinator.swift",
+      "line": 14,
+      "symbol": "CallListCoordinator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/Model/CallListModel+FetchRequest.swift",
+      "line": 13,
+      "symbol": "CallListModel.FetchRequest",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/View/CallListTableViewCell/CallListTableViewCell.swift",
+      "line": 12,
+      "symbol": "CallListTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/View/CallListViewController/CallListViewController.swift",
+      "line": null,
+      "symbol": "CallListViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/View/CallListViewController/CallListViewController.swift",
+      "line": null,
+      "symbol": "CallListViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/View/CallListViewController/CallListViewController.swift",
+      "line": 14,
+      "symbol": "CallListViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/View/CallListViewController/CallListViewController.swift",
+      "line": 18,
+      "symbol": "CallListViewController.resetBarButtonItem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/View/CallListViewController/CallListViewController.swift",
+      "line": 54,
+      "symbol": "CallListViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/View/CallListViewController/CallListViewController.swift",
+      "line": 60,
+      "symbol": "CallListViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/View/CallListViewController/CallListViewController.swift",
+      "line": 76,
+      "symbol": "CallListViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/View/CallListViewController/CallListViewController.swift",
+      "line": 139,
+      "symbol": "CallListViewController.tableView(_:viewForHeaderInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/ViewModel/CallListViewModel.swift",
+      "line": null,
+      "symbol": "CallListViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/ViewModel/CallListViewModel.swift",
+      "line": null,
+      "symbol": "CallListViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/ViewModel/CallListViewModel.swift",
+      "line": 15,
+      "symbol": "CallListViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/ViewModel/CallListViewModel.swift",
+      "line": 31,
+      "symbol": "CallListViewModel.Input.reset",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/ViewModel/CallListViewModel.swift",
+      "line": 34,
+      "symbol": "CallListViewModel.Input.select",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Scenes/CallList/ViewModel/CallListViewModel.swift",
+      "line": 182,
+      "symbol": "CallListViewModel.ResetEvent",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Desktop/ios-test/Aircall/Aircall/Theme/Theme.swift",
+      "line": 11,
+      "symbol": "Theme",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/admin/Desktop/ios-test/Aircall"
+}

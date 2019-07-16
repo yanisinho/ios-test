@@ -50,11 +50,11 @@ extension CDCall.Scope {
 	var title: String {
 		switch self {
 		case .all:
-			return Localized.all
+			return LocalizedString.all
 		case .archived:
-			return Localized.archived
+			return LocalizedString.archived
 		case .unarchived:
-			return Localized.unarchived
+			return LocalizedString.unarchived
 		}
 	}
 

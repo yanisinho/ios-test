@@ -8,9 +8,17 @@
 
 import UIKit
 
+/**
+
+Label representing Subtitle element.
+
+- note: This component can not be rendered at design time
+- requires: `YSKit`
+
+*/
 final class ACSubtitleLabel: YSLabel {
 
-	/// Specific design configuration.
+	/// Design configuration.
   override func design() {
 		textColor = Color.subtitle
   }

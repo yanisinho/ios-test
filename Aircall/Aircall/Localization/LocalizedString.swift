@@ -1,5 +1,5 @@
 //
-//  Localized.swift
+//  LocalizedString.swift
 //  Aircall
 //
 //  Created by Yanis SIDAHMED on 16/07/2019.
@@ -9,7 +9,7 @@
 import Foundation
 
 /// Structure referencing all localized strings.
-struct Localized {
+struct LocalizedString {
 
 	/// Localized string activity title.
 	static var title = LocalizedKey.title.value

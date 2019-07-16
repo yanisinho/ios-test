@@ -9,6 +9,7 @@
 import UIKit
 
 /**
+
 `UIRefreshControl` subclass
 
 A standard control that can initiate the refreshing of a table view’s contents.
@@ -17,14 +18,22 @@ A standard control that can initiate the refreshing of a table view’s contents
 
 - note: This component can not be rendered at design time
 - requires: `UIKit`
+
 */
 @IBDesignable
 open class YSRefreshControl: UIRefreshControl {
 
-	/// Called when a designable object is created in Interface Builder.
-	open override func prepareForInterfaceBuilder() {
-		super.prepareForInterfaceBuilder()
-		design()
+	/// Global design configuration.
+	open func design() {
+
+	}
+
+	// MARK: - Initializer
+
+	/// Implemented by subclasses to initialize a new object (the receiver)
+	// immediately after memory for it has been allocated.
+	public convenience override init() {
+		self.init(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
 	}
 
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.
@@ -39,15 +48,12 @@ open class YSRefreshControl: UIRefreshControl {
 		design()
 	}
 
-	/// Implemented by subclasses to initialize a new object (the receiver)
-	// immediately after memory for it has been allocated.
-	public convenience override init() {
-		self.init(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-	}
+	// MARK: - Interface Builder
 
-	/// Global design configuration.
-	open func design() {
-
+	/// Called when a designable object is created in Interface Builder.
+	open override func prepareForInterfaceBuilder() {
+		super.prepareForInterfaceBuilder()
+		design()
 	}
 
 }

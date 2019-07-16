@@ -67,9 +67,9 @@
 		84EF1DC122DD35CE00389815 /* WSCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DC022DD35CE00389815 /* WSCallTests.swift */; };
 		84EF1DC322DD35D900389815 /* WSResetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DC222DD35D900389815 /* WSResetTests.swift */; };
 		84EF1DC722DD379000389815 /* AircallErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DC622DD379000389815 /* AircallErrorTests.swift */; };
-		84EF1DD022DD392D00389815 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DCF22DD392D00389815 /* Localized.swift */; };
+		84EF1DD022DD392D00389815 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DCF22DD392D00389815 /* LocalizedString.swift */; };
 		84EF1DD222DD393D00389815 /* LocalizedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DD122DD393D00389815 /* LocalizedKey.swift */; };
-		84EF1DD522DD3A2600389815 /* LocalizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DD422DD3A2600389815 /* LocalizedTests.swift */; };
+		84EF1DD522DD3A2600389815 /* LocalizedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DD422DD3A2600389815 /* LocalizedStringTests.swift */; };
 		84EF1DD722DD3A3100389815 /* LocalizedKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DD622DD3A3100389815 /* LocalizedKeyTests.swift */; };
 		84EF1DD922DD3CAC00389815 /* UIRefreshControl+Refreshing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DD822DD3CAC00389815 /* UIRefreshControl+Refreshing.swift */; };
 		84EF1DDB22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1DDA22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift */; };
@@ -191,9 +191,9 @@
 		84EF1DC022DD35CE00389815 /* WSCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCallTests.swift; sourceTree = "<group>"; };
 		84EF1DC222DD35D900389815 /* WSResetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSResetTests.swift; sourceTree = "<group>"; };
 		84EF1DC622DD379000389815 /* AircallErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircallErrorTests.swift; sourceTree = "<group>"; };
-		84EF1DCF22DD392D00389815 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		84EF1DCF22DD392D00389815 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		84EF1DD122DD393D00389815 /* LocalizedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKey.swift; sourceTree = "<group>"; };
-		84EF1DD422DD3A2600389815 /* LocalizedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedTests.swift; sourceTree = "<group>"; };
+		84EF1DD422DD3A2600389815 /* LocalizedStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringTests.swift; sourceTree = "<group>"; };
 		84EF1DD622DD3A3100389815 /* LocalizedKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeyTests.swift; sourceTree = "<group>"; };
 		84EF1DD822DD3CAC00389815 /* UIRefreshControl+Refreshing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Refreshing.swift"; sourceTree = "<group>"; };
 		84EF1DDA22DD3CB700389815 /* UIActivityIndicatorView+Animating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Animating.swift"; sourceTree = "<group>"; };
@@ -349,6 +349,14 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		84B09B8F22DE0D71000ABFC1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D9422DD309500389815 /* YSKit */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		84EF1D2F22DD213700389815 = {
 			isa = PBXGroup;
 			children = (
@@ -381,7 +389,10 @@
 				84EF1DC822DD388900389815 /* Network */,
 				84EF1D6D22DD26FC00389815 /* Data */,
 				84EF1D6F22DD271700389815 /* Theme */,
+				84EF1D9322DD308E00389815 /* Components */,
+				84EF1DD322DD397800389815 /* Localization */,
 				84EF1DE422DD3DB600389815 /* Common */,
+				84B09B8F22DE0D71000ABFC1 /* Libraries */,
 			);
 			path = Aircall;
 			sourceTree = "<group>";
@@ -394,6 +405,8 @@
 				84EF1DCC22DD38C200389815 /* Network */,
 				84B09B8922DDE9EC000ABFC1 /* Data */,
 				84EF1D9722DD30D900389815 /* Theme */,
+				84EF1D9922DD30F300389815 /* Components */,
+				84EF1DE222DD3D8700389815 /* Localization */,
 				84EF1DE322DD3DAF00389815 /* Common */,
 			);
 			path = AircallTests;
@@ -438,7 +451,6 @@
 			children = (
 				84EF1D8E22DD2F6400389815 /* Theme.swift */,
 				84EF1D9222DD307D00389815 /* Colors */,
-				84EF1D9322DD308E00389815 /* Components */,
 				84EF1D4522DD213800389815 /* Assets.xcassets */,
 			);
 			path = Theme;
@@ -456,9 +468,8 @@
 		84EF1D9322DD308E00389815 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1D9422DD309500389815 /* YSKit */,
-				84EF1D9522DD309D00389815 /* Labels */,
-				84EF1D9622DD30A400389815 /* RefreshControls */,
+				84EF1D9522DD309D00389815 /* Label */,
+				84EF1D9622DD30A400389815 /* RefreshControl */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -472,22 +483,22 @@
 			path = YSKit;
 			sourceTree = "<group>";
 		};
-		84EF1D9522DD309D00389815 /* Labels */ = {
+		84EF1D9522DD309D00389815 /* Label */ = {
 			isa = PBXGroup;
 			children = (
 				84EF1D7D22DD2C7300389815 /* ACTitleLabel.swift */,
 				84EF1D7F22DD2C7F00389815 /* ACSubtitleLabel.swift */,
 				84EF1D8122DD2C8A00389815 /* ACHeaderLabel.swift */,
 			);
-			path = Labels;
+			path = Label;
 			sourceTree = "<group>";
 		};
-		84EF1D9622DD30A400389815 /* RefreshControls */ = {
+		84EF1D9622DD30A400389815 /* RefreshControl */ = {
 			isa = PBXGroup;
 			children = (
 				84EF1D8322DD2D5000389815 /* ACRefreshControl.swift */,
 			);
-			path = RefreshControls;
+			path = RefreshControl;
 			sourceTree = "<group>";
 		};
 		84EF1D9722DD30D900389815 /* Theme */ = {
@@ -495,7 +506,6 @@
 			children = (
 				84EF1D9022DD300300389815 /* ThemeTests.swift */,
 				84EF1D9822DD30E500389815 /* Colors */,
-				84EF1D9922DD30F300389815 /* Components */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -512,28 +522,28 @@
 		84EF1D9922DD30F300389815 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1D9A22DD30FB00389815 /* Labels */,
-				84EF1D9B22DD310100389815 /* RefreshControls */,
+				84EF1D9A22DD30FB00389815 /* Label */,
+				84EF1D9B22DD310100389815 /* RefreshControl */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		84EF1D9A22DD30FB00389815 /* Labels */ = {
+		84EF1D9A22DD30FB00389815 /* Label */ = {
 			isa = PBXGroup;
 			children = (
 				84EF1D8522DD2DFF00389815 /* ACTitleLabelTests.swift */,
 				84EF1D8722DD2E0A00389815 /* ACSubtitleLabelTests.swift */,
 				84EF1D8922DD2E1600389815 /* ACHeaderLabelTests.swift */,
 			);
-			path = Labels;
+			path = Label;
 			sourceTree = "<group>";
 		};
-		84EF1D9B22DD310100389815 /* RefreshControls */ = {
+		84EF1D9B22DD310100389815 /* RefreshControl */ = {
 			isa = PBXGroup;
 			children = (
 				84EF1D8B22DD2EB300389815 /* ACRefreshControlTests.swift */,
 			);
-			path = RefreshControls;
+			path = RefreshControl;
 			sourceTree = "<group>";
 		};
 		84EF1DC822DD388900389815 /* Network */ = {
@@ -610,8 +620,8 @@
 		84EF1DD322DD397800389815 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1DCF22DD392D00389815 /* Localized.swift */,
 				84EF1DD122DD393D00389815 /* LocalizedKey.swift */,
+				84EF1DCF22DD392D00389815 /* LocalizedString.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -637,7 +647,7 @@
 		84EF1DE222DD3D8700389815 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1DD422DD3A2600389815 /* LocalizedTests.swift */,
+				84EF1DD422DD3A2600389815 /* LocalizedStringTests.swift */,
 				84EF1DD622DD3A3100389815 /* LocalizedKeyTests.swift */,
 			);
 			path = Localization;
@@ -646,7 +656,6 @@
 		84EF1DE322DD3DAF00389815 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1DE222DD3D8700389815 /* Localization */,
 				84EF1DE122DD3D7B00389815 /* Extensions */,
 				84EF1DE922DD3E1000389815 /* Utils */,
 			);
@@ -656,7 +665,6 @@
 		84EF1DE422DD3DB600389815 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1DD322DD397800389815 /* Localization */,
 				84EF1DE022DD3D7400389815 /* Extensions */,
 				84EF1DE622DD3DD300389815 /* Utils */,
 				84EF1DE522DD3DC300389815 /* Protocols */,
@@ -1071,7 +1079,7 @@
 				84EF1DB322DD33C800389815 /* WSResponse.swift in Sources */,
 				84EF1DB522DD342300389815 /* CallDirection.swift in Sources */,
 				84EF1DF922DD42A100389815 /* Sortable.swift in Sources */,
-				84EF1DD022DD392D00389815 /* Localized.swift in Sources */,
+				84EF1DD022DD392D00389815 /* LocalizedString.swift in Sources */,
 				84EF1DD222DD393D00389815 /* LocalizedKey.swift in Sources */,
 				84EF1DFF22DD443800389815 /* Configurator.swift in Sources */,
 				84EF1DFB22DD42D700389815 /* RxDataSources.swift in Sources */,
@@ -1132,7 +1140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EF1DE822DD3E0D00389815 /* ACDateTests.swift in Sources */,
-				84EF1DD522DD3A2600389815 /* LocalizedTests.swift in Sources */,
+				84EF1DD522DD3A2600389815 /* LocalizedStringTests.swift in Sources */,
 				84EF1D8822DD2E0A00389815 /* ACSubtitleLabelTests.swift in Sources */,
 				84B09B8722DDE9CD000ABFC1 /* CallDetailsCoordinatorTests.swift in Sources */,
 				84EF1D9122DD300300389815 /* ThemeTests.swift in Sources */,

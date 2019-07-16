@@ -8,9 +8,10 @@
 
 import Foundation
 
+/// Structure referencing all localized keys.
 enum LocalizedKey: String, CaseIterable {
 
-	/// Localized string activity title.
+	/// Localized string representingactivity title.
 	case title
 
 	/// Localized string representing missed call.
@@ -45,6 +46,8 @@ enum LocalizedKey: String, CaseIterable {
 
 	/// Localized string representing unknown error.
 	case unknownError
+
+	// MARK: - Computed properties
 
 	/// Localized string.
 	var value: String {

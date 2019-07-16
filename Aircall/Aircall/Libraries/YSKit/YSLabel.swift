@@ -9,6 +9,7 @@
 import UIKit
 
 /**
+
 `UILabel` subclass
 
 View that displays one or more lines of read-only text,
@@ -18,14 +19,22 @@ often used in conjunction with controls to describe their intended purpose.
 
 - note: This component can be rendered at design time
 - requires: `UIKit`
+
 */
 @IBDesignable
 open class YSLabel: UILabel {
 
-	/// Called when a designable object is created in Interface Builder.
-	open override func prepareForInterfaceBuilder() {
-		super.prepareForInterfaceBuilder()
-		design()
+	/// Global design configuration.
+	open func design() {
+
+	}
+
+	// MARK: - Initializer
+
+	/// Implemented by subclasses to initialize a new object (the receiver)
+	/// immediately after memory for it has been allocated.
+	public convenience init() {
+		self.init(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
 	}
 
 	/// Initializes and returns a newly allocated view object with the specified frame rectangle.
@@ -34,21 +43,18 @@ open class YSLabel: UILabel {
 		design()
 	}
 
-	/// Initializes and returns a newly allocated view object deserialized.
+	/// Initializes and returns a newly allocated view object deserialized
 	public required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		design()
 	}
 
-	/// Implemented by subclasses to initialize a new object (the receiver)
-	/// immediately after memory for it has been allocated.
-	public convenience init() {
-		self.init(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-	}
+	// MARK: - Interface Builder
 
-	/// Global design configuration.
-	open func design() {
-
+	/// Called when a designable object is created in Interface Builder.
+	open override func prepareForInterfaceBuilder() {
+		super.prepareForInterfaceBuilder()
+		design()
 	}
 
 }

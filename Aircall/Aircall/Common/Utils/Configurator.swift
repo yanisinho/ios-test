@@ -30,9 +30,9 @@ struct Configurator {
 		view.toLabel.text = {
 			switch call.type {
 			case "missed":
-				return Localized.missed
+				return LocalizedString.missed
 			case "voicemail":
-				return Localized.voicemail
+				return LocalizedString.voicemail
 			default:
 				return "\(call.to)"
 			}

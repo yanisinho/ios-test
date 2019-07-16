@@ -8,9 +8,17 @@
 
 import UIKit
 
+/**
+
+Label representing Title element.
+
+- note: This component can not be rendered at design time
+- requires: `YSKit`
+
+*/
 final class ACTitleLabel: YSLabel {
 
-	/// Specific design configuration.
+	/// Design configuration.
   override func design() {
 		textColor = Color.title
   }

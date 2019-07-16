@@ -59,7 +59,7 @@ final class CallListViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = Localized.title
+		title = LocalizedString.title
 		definesPresentationContext = true
 		tableView.tableFooterView = UIView()
 		tableView.rowHeight = UITableView.automaticDimension

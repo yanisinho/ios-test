@@ -125,9 +125,9 @@ final class CallDetailsViewModel: ViewModel {
 			to: success.map {
 				switch $0.type {
 				case "missed":
-					return Localized.missed
+					return LocalizedString.missed
 				case "voicemail":
-					return Localized.voicemail
+					return LocalizedString.voicemail
 				default:
 					return $0.to
 				}

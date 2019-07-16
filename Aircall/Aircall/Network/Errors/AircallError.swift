@@ -63,18 +63,18 @@ extension AircallError {
 			if let error = error as? MoyaError {
 				switch error {
 				case .objectMapping:
-					return Localized.mappingError
+					return LocalizedString.mappingError
 				case .underlying:
-					return Localized.networkError
+					return LocalizedString.networkError
 				case .statusCode:
-					return Localized.serverError
+					return LocalizedString.serverError
 				default:
-					return Localized.unknownError
+					return LocalizedString.unknownError
 				}
 			} else if error is AircallError {
-				return Localized.businessError
+				return LocalizedString.businessError
 			}
-			return Localized.unknownError
+			return LocalizedString.unknownError
 		}()
 		return WSError(
 			error: error,
