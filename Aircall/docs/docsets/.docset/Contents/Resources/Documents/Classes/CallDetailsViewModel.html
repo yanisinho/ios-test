@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CallDetailsViewModel Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/CallDetailsViewModel" class="dashAnchor"></a>
+
+    <a title="CallDetailsViewModel Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (77% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/aircall/ios-test">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      CallDetailsViewModel Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ACHeaderLabel.html">ACHeaderLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ACRefreshControl.html">ACRefreshControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ACSubtitleLabel.html">ACSubtitleLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ACTitleLabel.html">ACTitleLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AppCoordinator.html">AppCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CDCall.html">CDCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CDCall/Scope.html">– Scope</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallDetailsCoordinator.html">CallDetailsCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallDetailsViewController.html">CallDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallDetailsViewModel.html">CallDetailsViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallDetailsViewModel/Input.html">– Input</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallDetailsViewModel/Output.html">– Output</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallListCoordinator.html">CallListCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallListModel.html">CallListModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallListModel/FetchRequest.html">– FetchRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallListModel/Parameter.html">– Parameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallListTableViewCell.html">CallListTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallListViewController.html">CallListViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallListViewModel.html">CallListViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallListViewModel/Input.html">– Input</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CallListViewModel/Output.html">– Output</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/YSLabel.html">YSLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/YSRefreshControl.html">YSRefreshControl</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Aircall.html">Aircall</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AircallError.html">AircallError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CallDirection.html">CallDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CallType.html">CallType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ColorName.html">ColorName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LocalizedKey.html">LocalizedKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/ObservableType.html">ObservableType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIActivityIndicatorView.html">UIActivityIndicatorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIRefreshControl.html">UIRefreshControl</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CallDisplayable.html">CallDisplayable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CallRepresentable.html">CallRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Coordinator.html">Coordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/CoreDataStorable.html">CoreDataStorable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ShowCallDetails.html">ShowCallDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/Sortable.html">Sortable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ViewModel.html">ViewModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ACDate.html">ACDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Banner.html">Banner</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CallDetailsModel.html">CallDetailsModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CallDetailsModel/FetchRequest.html">– FetchRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CallDetailsModel/Parameter.html">– Parameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Color.html">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Configurator.html">Configurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Localized.html">Localized</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RxDataSources.html">RxDataSources</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Theme.html">Theme</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WSCall.html">WSCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WSCall/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WSCalls.html">WSCalls</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WSError.html">WSError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WSReset.html">WSReset</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WSResponse.html">WSResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WSResponse/CodingKeys.html">– CodingKeys</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>CallDetailsViewModel</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">CallDetailsViewModel</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ViewModel.html">ViewModel</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall9ViewModelP2InQa"></a>
+                    <a name="//apple_ref/swift/Alias/In" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall9ViewModelP2InQa">In</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">In</span> <span class="o">=</span> <span class="kt"><a href="../Classes/CallDetailsViewModel/Input.html">Input</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall9ViewModelP3OutQa"></a>
+                    <a name="//apple_ref/swift/Alias/Out" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall9ViewModelP3OutQa">Out</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Out</span> <span class="o">=</span> <span class="kt"><a href="../Classes/CallDetailsViewModel/Output.html">Output</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Input"></a>
+                <a name="//apple_ref/swift/Section/Input" class="dashAnchor"></a>
+                <a href="#/Input">
+                  <h3 class="section-name">Input</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC5InputV"></a>
+                    <a name="//apple_ref/swift/Struct/Input" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC5InputV">Input</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Classes/CallDetailsViewModel.html">CallDetailsViewModel</a></code> input.</p>
+
+                        <a href="../Classes/CallDetailsViewModel/Input.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Input</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Output"></a>
+                <a name="//apple_ref/swift/Section/Output" class="dashAnchor"></a>
+                <a href="#/Output">
+                  <h3 class="section-name">Output</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC6OutputV"></a>
+                    <a name="//apple_ref/swift/Struct/Output" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC6OutputV">Output</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Classes/CallDetailsViewModel.html">CallDetailsViewModel</a></code> output.</p>
+
+                        <a href="../Classes/CallDetailsViewModel/Output.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Output</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC11coordinatorAA0bC11CoordinatorCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/coordinator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC11coordinatorAA0bC11CoordinatorCSgvp">coordinator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Coordinator</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">coordinator</span><span class="p">:</span> <span class="kt"><a href="../Classes/CallDetailsCoordinator.html">CallDetailsCoordinator</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC5model33_715631FC9637AF97FF28C149FCE6D1AALLAA0bcE0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/model" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC5model33_715631FC9637AF97FF28C149FCE6D1AALLAA0bcE0Vvp">model</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Model</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">model</span><span class="p">:</span> <span class="kt"><a href="../Structs/CallDetailsModel.html">CallDetailsModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC8provider33_715631FC9637AF97FF28C149FCE6D1AALL4Moya0N8ProviderCyA2AOGvp"></a>
+                    <a name="//apple_ref/swift/Property/provider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC8provider33_715631FC9637AF97FF28C149FCE6D1AALL4Moya0N8ProviderCyA2AOGvp">provider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Moya provider used for web services.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">MoyaProvider</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Aircall.html">Aircall</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC7decoder33_715631FC9637AF97FF28C149FCE6D1AALL10Foundation11JSONDecoderCvp"></a>
+                    <a name="//apple_ref/swift/Property/decoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC7decoder33_715631FC9637AF97FF28C149FCE6D1AALL10Foundation11JSONDecoderCvp">decoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>JSONDecoder used with web services.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">JSONDecoder</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC10disposeBag33_715631FC9637AF97FF28C149FCE6D1AALL7RxSwift07DisposeG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/disposeBag" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC10disposeBag33_715631FC9637AF97FF28C149FCE6D1AALL7RxSwift07DisposeG0Cvp">disposeBag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>RxSwift dispose bag</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">disposeBag</span><span class="p">:</span> <span class="kt">DisposeBag</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC15successBehavior33_715631FC9637AF97FF28C149FCE6D1AALL7RxCocoa0G5RelayCyAA6WSCallVSgGvp"></a>
+                    <a name="//apple_ref/swift/Property/successBehavior" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC15successBehavior33_715631FC9637AF97FF28C149FCE6D1AALL7RxCocoa0G5RelayCyAA6WSCallVSgGvp">successBehavior</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Emits an event when call is updated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">successBehavior</span><span class="p">:</span> <span class="kt">BehaviorRelay</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/WSCall.html">WSCall</a></span><span class="p">?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC13errorBehavior33_715631FC9637AF97FF28C149FCE6D1AALL7RxCocoa0G5RelayCyAA7WSErrorVSgGvp"></a>
+                    <a name="//apple_ref/swift/Property/errorBehavior" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC13errorBehavior33_715631FC9637AF97FF28C149FCE6D1AALL7RxCocoa0G5RelayCyAA7WSErrorVSgGvp">errorBehavior</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Emits an event when table view refreshing status changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">errorBehavior</span><span class="p">:</span> <span class="kt">BehaviorRelay</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/WSError.html">WSError</a></span><span class="p">?</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC8provider7decoder11coordinator5modelAC4Moya0J8ProviderCyA2AOG_10Foundation11JSONDecoderCAA0bC11CoordinatorCAA0bcE0Vtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(provider:decoder:coordinator:model:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC8provider7decoder11coordinator5modelAC4Moya0J8ProviderCyA2AOG_10Foundation11JSONDecoderCAA0bC11CoordinatorCAA0bcE0Vtcfc">init(provider:decoder:coordinator:model:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span>
+	<span class="nv">provider</span><span class="p">:</span> <span class="kt">MoyaProvider</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Aircall.html">Aircall</a></span><span class="o">&gt;</span><span class="p">,</span>
+	<span class="nv">decoder</span><span class="p">:</span> <span class="kt">JSONDecoder</span><span class="p">,</span>
+	<span class="nv">coordinator</span><span class="p">:</span> <span class="kt"><a href="../Classes/CallDetailsCoordinator.html">CallDetailsCoordinator</a></span><span class="p">,</span>
+	<span class="nv">model</span><span class="p">:</span> <span class="kt"><a href="../Structs/CallDetailsModel.html">CallDetailsModel</a></span>
+	<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC5setup4fromAC6OutputVAC5InputV_tF"></a>
+                    <a name="//apple_ref/swift/Method/setup(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC5setup4fromAC6OutputVAC5InputV_tF">setup(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Produce <code><a href="../Protocols/ViewModel.html">ViewModel</a></code>&lsquo;s output from <code><a href="../Protocols/ViewModel.html">ViewModel</a></code>&rsquo;s input.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setup</span><span class="p">(</span>
+	<span class="n">from</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">CallDetailsViewModel</span><span class="o">.</span><span class="kt"><a href="../Classes/CallDetailsViewModel/Input.html">Input</a></span>
+	<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CallDetailsViewModel</span><span class="o">.</span><span class="kt"><a href="../Classes/CallDetailsViewModel/Output.html">Output</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Protocols/ViewModel.html">ViewModel</a></code> input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Protocols/ViewModel.html">ViewModel</a></code> output</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC8retreiveyyF"></a>
+                    <a name="//apple_ref/swift/Method/retreive()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC8retreiveyyF">retreive()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retreive <code><a href="../Classes/CDCall.html">CDCall</a></code> from persistence store.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">retreive</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC6reloadyyF"></a>
+                    <a name="//apple_ref/swift/Method/reload()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC6reloadyyF">reload()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reload web service.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reload</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Network"></a>
+                <a name="//apple_ref/swift/Section/Network" class="dashAnchor"></a>
+                <a href="#/Network">
+                  <h3 class="section-name">Network</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC0B5Eventa"></a>
+                    <a name="//apple_ref/swift/Alias/CallEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC0B5Eventa">CallEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents an observable of call</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">CallEvent</span> <span class="o">=</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">Event</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/WSCall.html">WSCall</a></span><span class="o">&gt;&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC03getB033_715631FC9637AF97FF28C149FCE6D1AALL2id7RxSwift10ObservableCyAG5EventOyAA6WSCallVGGSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/getCall(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC03getB033_715631FC9637AF97FF28C149FCE6D1AALL2id7RxSwift10ObservableCyAG5EventOyAA6WSCallVGGSi_tF">getCall(id:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retreive call from web service.</p>
+
+<ul>
+<li><p>id: The call identifier.</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">getCall</span><span class="p">(</span>
+	<span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span>
+	<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CallDetailsViewModel.html#/s:7Aircall20CallDetailsViewModelC0B5Eventa">CallEvent</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable of Event<Call></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC07archiveB033_715631FC9637AF97FF28C149FCE6D1AALL2id7RxSwift10ObservableCyAG5EventOyAA6WSCallVGGSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/archiveCall(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC07archiveB033_715631FC9637AF97FF28C149FCE6D1AALL2id7RxSwift10ObservableCyAG5EventOyAA6WSCallVGGSi_tF">archiveCall(id:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Archive call from web service.</p>
+
+<ul>
+<li><p>id: The call identifier.</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">archiveCall</span><span class="p">(</span>
+	<span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span>
+	<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CallDetailsViewModel.html#/s:7Aircall20CallDetailsViewModelC0B5Eventa">CallEvent</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Observable of Event<WSCall></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Side%20effects"></a>
+                <a name="//apple_ref/swift/Section/Side effects" class="dashAnchor"></a>
+                <a href="#/Side%20effects">
+                  <h3 class="section-name">Side effects</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC6onNext33_715631FC9637AF97FF28C149FCE6D1AALL5eventy7RxSwift5EventOyAA6WSCallVG_tF"></a>
+                    <a name="//apple_ref/swift/Method/onNext(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC6onNext33_715631FC9637AF97FF28C149FCE6D1AALL5eventy7RxSwift5EventOyAA6WSCallVG_tF">onNext(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Side effects when an event is emitted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">onNext</span><span class="p">(</span>
+	<span class="nv">event</span><span class="p">:</span> <span class="kt">Event</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/WSCall.html">WSCall</a></span><span class="o">&gt;</span>
+	<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>event</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The event to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Aircall20CallDetailsViewModelC7onError33_715631FC9637AF97FF28C149FCE6D1AALL5errorys0G0_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/onError(error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Aircall20CallDetailsViewModelC7onError33_715631FC9637AF97FF28C149FCE6D1AALL5errorys0G0_p_tF">onError(error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Side effects when an error is emitted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">onError</span><span class="p">(</span>
+	<span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span>
+	<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>event</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The event to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2019 <a class="link" href="https://github.com/aircall" target="_blank" rel="external">Aircall</a> under <a class="link" href="https://github.com/aircall/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

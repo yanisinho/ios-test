@@ -1,0 +1,14 @@
+xcodebuild_arguments:
+    - "-workspace"
+    - "Aircall.xcworkspace"
+    - "-scheme"
+    - "Aircall"
+swift_version: 5.0.1
+min_acl: private
+author: Yanis SID-AHMED GARCIA
+author_url: https://github.com/aircall
+github_url: https://github.com/aircall/ios-test
+exclude:
+  - "Pods/"
+copyright: '© 2019 [Aircall](https://github.com/aircall) under [open source license](https://github.com/aircall/blob/master/LICENSE).'
+theme: fullwidth
