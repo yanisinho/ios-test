@@ -13,6 +13,7 @@
 		8479854D22DDB15B00042A11 /* CallListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479854B22DDB15B00042A11 /* CallListViewController.swift */; };
 		8479854E22DDB15B00042A11 /* CallListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479854C22DDB15B00042A11 /* CallListViewController.xib */; };
 		8479855022DDB64500042A11 /* ShowCallDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479854F22DDB64500042A11 /* ShowCallDetails.swift */; };
+		8479855222DDB92600042A11 /* CallListModelParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479855122DDB92600042A11 /* CallListModelParameter.swift */; };
 		84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D3B22DD213700389815 /* AppDelegate.swift */; };
 		84EF1D4422DD213700389815 /* Aircall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D4222DD213700389815 /* Aircall.xcdatamodeld */; };
 		84EF1D4622DD213800389815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1D4522DD213800389815 /* Assets.xcassets */; };
@@ -119,6 +120,7 @@
 		8479854B22DDB15B00042A11 /* CallListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListViewController.swift; sourceTree = "<group>"; };
 		8479854C22DDB15B00042A11 /* CallListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallListViewController.xib; sourceTree = "<group>"; };
 		8479854F22DDB64500042A11 /* ShowCallDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCallDetails.swift; sourceTree = "<group>"; };
+		8479855122DDB92600042A11 /* CallListModelParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallListModelParameter.swift; sourceTree = "<group>"; };
 		84EF1D3822DD213700389815 /* Aircall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aircall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EF1D3B22DD213700389815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EF1D4322DD213700389815 /* Aircall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aircall.xcdatamodel; sourceTree = "<group>"; };
@@ -655,6 +657,7 @@
 			isa = PBXGroup;
 			children = (
 				84EF1E0822DD464100389815 /* CallListModel.swift */,
+				8479855122DDB92600042A11 /* CallListModelParameter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1024,6 +1027,7 @@
 				84EF1E1322DD467600389815 /* CallDetailsViewModel.swift in Sources */,
 				84EF1D7622DD29F000389815 /* Color.swift in Sources */,
 				84EF1DF322DD41DA00389815 /* CDCall+Scope.swift in Sources */,
+				8479855222DDB92600042A11 /* CallListModelParameter.swift in Sources */,
 				84EF1D3C22DD213700389815 /* AppDelegate.swift in Sources */,
 				84EF1DA122DD32C000389815 /* AircallError+LocalizedError.swift in Sources */,
 				84EF1DED22DD3FCA00389815 /* CDCall+CoreDataClass.swift in Sources */,
