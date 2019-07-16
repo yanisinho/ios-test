@@ -31,8 +31,8 @@
 		84EF1D4922DD213800389815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EF1D4722DD213800389815 /* LaunchScreen.storyboard */; };
 		84EF1D5422DD213800389815 /* AircallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D5322DD213800389815 /* AircallTests.swift */; };
 		84EF1D5F22DD213800389815 /* AircallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D5E22DD213800389815 /* AircallUITests.swift */; };
-		84EF1D7122DD288500389815 /* ColorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7022DD288500389815 /* ColorName.swift */; };
-		84EF1D7422DD28E800389815 /* ColorNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7322DD28E800389815 /* ColorNameTests.swift */; };
+		84EF1D7122DD288500389815 /* ColorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7022DD288500389815 /* ColorKey.swift */; };
+		84EF1D7422DD28E800389815 /* ColorKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7322DD28E800389815 /* ColorKeyTests.swift */; };
 		84EF1D7622DD29F000389815 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7522DD29F000389815 /* Color.swift */; };
 		84EF1D7822DD2A7000389815 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7722DD2A7000389815 /* ColorTests.swift */; };
 		84EF1D7A22DD2BFE00389815 /* YSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF1D7922DD2BFE00389815 /* YSLabel.swift */; };
@@ -155,8 +155,8 @@
 		84EF1D5A22DD213800389815 /* AircallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AircallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EF1D5E22DD213800389815 /* AircallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircallUITests.swift; sourceTree = "<group>"; };
 		84EF1D6022DD213800389815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84EF1D7022DD288500389815 /* ColorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorName.swift; sourceTree = "<group>"; };
-		84EF1D7322DD28E800389815 /* ColorNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNameTests.swift; sourceTree = "<group>"; };
+		84EF1D7022DD288500389815 /* ColorKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorKey.swift; sourceTree = "<group>"; };
+		84EF1D7322DD28E800389815 /* ColorKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorKeyTests.swift; sourceTree = "<group>"; };
 		84EF1D7522DD29F000389815 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		84EF1D7722DD2A7000389815 /* ColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
 		84EF1D7922DD2BFE00389815 /* YSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSLabel.swift; sourceTree = "<group>"; };
@@ -309,6 +309,15 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		849A975D22DE14D800950CFC /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				84EF1D7322DD28E800389815 /* ColorKeyTests.swift */,
+				84EF1D7722DD2A7000389815 /* ColorTests.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		84B09B8822DDE9D8000ABFC1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,7 +398,8 @@
 				84EF1DC822DD388900389815 /* Network */,
 				84EF1D6D22DD26FC00389815 /* Data */,
 				84EF1D6F22DD271700389815 /* Theme */,
-				84EF1D9322DD308E00389815 /* Components */,
+				84EF1D9222DD307D00389815 /* Colors */,
+				84EF1D9322DD308E00389815 /* Component */,
 				84EF1DD322DD397800389815 /* Localization */,
 				84EF1DE422DD3DB600389815 /* Common */,
 				84B09B8F22DE0D71000ABFC1 /* Libraries */,
@@ -405,7 +415,8 @@
 				84EF1DCC22DD38C200389815 /* Network */,
 				84B09B8922DDE9EC000ABFC1 /* Data */,
 				84EF1D9722DD30D900389815 /* Theme */,
-				84EF1D9922DD30F300389815 /* Components */,
+				849A975D22DE14D800950CFC /* Color */,
+				84EF1D9922DD30F300389815 /* Component */,
 				84EF1DE222DD3D8700389815 /* Localization */,
 				84EF1DE322DD3DAF00389815 /* Common */,
 			);
@@ -449,9 +460,8 @@
 		84EF1D6F22DD271700389815 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				84EF1D8E22DD2F6400389815 /* Theme.swift */,
-				84EF1D9222DD307D00389815 /* Colors */,
 				84EF1D4522DD213800389815 /* Assets.xcassets */,
+				84EF1D8E22DD2F6400389815 /* Theme.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -459,19 +469,19 @@
 		84EF1D9222DD307D00389815 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				84EF1D7022DD288500389815 /* ColorKey.swift */,
 				84EF1D7522DD29F000389815 /* Color.swift */,
-				84EF1D7022DD288500389815 /* ColorName.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
 		};
-		84EF1D9322DD308E00389815 /* Components */ = {
+		84EF1D9322DD308E00389815 /* Component */ = {
 			isa = PBXGroup;
 			children = (
 				84EF1D9522DD309D00389815 /* Label */,
 				84EF1D9622DD30A400389815 /* RefreshControl */,
 			);
-			path = Components;
+			path = Component;
 			sourceTree = "<group>";
 		};
 		84EF1D9422DD309500389815 /* YSKit */ = {
@@ -505,27 +515,17 @@
 			isa = PBXGroup;
 			children = (
 				84EF1D9022DD300300389815 /* ThemeTests.swift */,
-				84EF1D9822DD30E500389815 /* Colors */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		84EF1D9822DD30E500389815 /* Colors */ = {
-			isa = PBXGroup;
-			children = (
-				84EF1D7722DD2A7000389815 /* ColorTests.swift */,
-				84EF1D7322DD28E800389815 /* ColorNameTests.swift */,
-			);
-			path = Colors;
-			sourceTree = "<group>";
-		};
-		84EF1D9922DD30F300389815 /* Components */ = {
+		84EF1D9922DD30F300389815 /* Component */ = {
 			isa = PBXGroup;
 			children = (
 				84EF1D9A22DD30FB00389815 /* Label */,
 				84EF1D9B22DD310100389815 /* RefreshControl */,
 			);
-			path = Components;
+			path = Component;
 			sourceTree = "<group>";
 		};
 		84EF1D9A22DD30FB00389815 /* Label */ = {
@@ -1101,7 +1101,7 @@
 				84EF1D7E22DD2C7300389815 /* ACTitleLabel.swift in Sources */,
 				84EF1E0322DD453700389815 /* ViewModel.swift in Sources */,
 				84EF1DFD22DD442500389815 /* CallDisplayable.swift in Sources */,
-				84EF1D7122DD288500389815 /* ColorName.swift in Sources */,
+				84EF1D7122DD288500389815 /* ColorKey.swift in Sources */,
 				84EF1DAF22DD33B900389815 /* WSReset.swift in Sources */,
 				84EF1E1522DD468300389815 /* CallDetailsCoordinator.swift in Sources */,
 				84EF1DEB22DD3EF500389815 /* Observable+MapBusiness.swift in Sources */,
@@ -1145,7 +1145,7 @@
 				84B09B8722DDE9CD000ABFC1 /* CallDetailsCoordinatorTests.swift in Sources */,
 				84EF1D9122DD300300389815 /* ThemeTests.swift in Sources */,
 				84B09B8522DDE9C1000ABFC1 /* CallListCoordinatorTests.swift in Sources */,
-				84EF1D7422DD28E800389815 /* ColorNameTests.swift in Sources */,
+				84EF1D7422DD28E800389815 /* ColorKeyTests.swift in Sources */,
 				84EF1DDF22DD3CD900389815 /* UIActivityIndicatorViewAnimatingTests.swift in Sources */,
 				84EF1DC722DD379000389815 /* AircallErrorTests.swift in Sources */,
 				84EF1DD722DD3A3100389815 /* LocalizedKeyTests.swift in Sources */,

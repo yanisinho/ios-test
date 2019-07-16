@@ -20,7 +20,7 @@ custom_categories:
       - LocalizedKey
       - LocalizedString
 
-  - name: Components
+  - name: Component
     children:
       - ACTitleLabel
       - ACSubtitleLabel

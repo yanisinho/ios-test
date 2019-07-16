@@ -12,18 +12,18 @@ import UIKit
 struct Color {
 
 	/// Primary color.
-	static var primary: UIColor = ColorName.primary.color
+	static var primary: UIColor = ColorKey.primary.color
 
 	/// Secondary color.
-	static var secondary: UIColor = ColorName.secondary.color
+	static var secondary: UIColor = ColorKey.secondary.color
 
 	/// Title color.
-	static var title: UIColor = ColorName.title.color
+	static var title: UIColor = ColorKey.title.color
 
 	/// Subtitle color.
-	static var subtitle: UIColor = ColorName.subtitle.color
+	static var subtitle: UIColor = ColorKey.subtitle.color
 
 	/// Background color.
-	static var background: UIColor = ColorName.background.color
+	static var background: UIColor = ColorKey.background.color
 
 }

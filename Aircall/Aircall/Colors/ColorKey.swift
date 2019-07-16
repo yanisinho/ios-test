@@ -1,5 +1,5 @@
 //
-//  ColorName.swift
+//  ColorKey.swift
 //  Aircall
 //
 //  Created by Yanis SIDAHMED on 15/07/2019.
@@ -9,7 +9,7 @@
 import UIKit
 
 /// All color names.
-enum ColorName: String, CaseIterable {
+enum ColorKey: String, CaseIterable {
 
 	/// Primary color.
 	case primary
